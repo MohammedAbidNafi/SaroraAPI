@@ -123,7 +123,6 @@ def chatWithBot(inputText):
     if numpy.all((numpyCurrentText == 0)):
         return "I didn't get that, try again"
 
-
     result = myChatModel.predict(numpyCurrentText[0:1])
     result_index = numpy.argmax(result)
     tag = labels[result_index]
@@ -149,5 +148,4 @@ def chat():
 
         print(chatWithBot(inp))
 
-
-#chat()
+# chat()

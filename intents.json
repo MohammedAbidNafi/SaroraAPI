@@ -11,11 +11,21 @@
     {"tag": "greetingMore",
      "patterns": [ "How are you", "Whats up"],
      "responses": ["I am fine!, How about you?", "I am good, you?"],
-     "context_set": ""
+     "context_set": "howareyou"
     },
     {"tag": "greetingResponsePositive",
       "patterns": ["am good", "ok","am fine","cool"],
       "responses": ["Good to know that!","Cool"],
+      "context_filter": "howareyou"
+    },
+    {"tag": "greetingResponseNegative",
+      "patterns": ["bad","worse", "depressed","sick"],
+      "responses": ["That's Unfortunate","That's pretty bad", "Am not smart enough or else I would have helped you","Don't Worry I hope this is temporary"],
+      "context_filter": "howareyou"
+    },
+    {"tag": "negative",
+      "patterns": ["bad","worst"],
+      "responses": ["What is bad?","If it's me sorry but am trying to improve"],
       "context_set": ""
     },
     {"tag": "goodbye",
@@ -33,6 +43,7 @@
      "responses": ["You can call me Sarora.", "I'm Sarora!","It's Sarora..."],
      "context_set": ""
     }
+
 
 ]
 }
