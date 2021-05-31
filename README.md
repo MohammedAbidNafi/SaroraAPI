@@ -2,6 +2,20 @@
 
 Sarora API is a Virtual Bot API if you send a string to this you will recieve a respose string reply to your string it uses Machine Learning to Predict what to reply. You can see the types of respose the bot can give in intents.json file.
 
+## Ways to Contribute 
+1. Create an issue to discuss about your idea.(https://github.com/MohammedAbidNafi/SaroraAPI/issues)
+2. Suggest any feature or suggestion.(https://github.com/MohammedAbidNafi/SaroraAPI/issues)
+3. Have a discussion in (https://github.com/MohammedAbidNafi/SaroraAPI/discussions)
+
+### To make changes to code
+
+1. Fork it (https://github.com/MohammedAbidNafi/SaroraAPI/fork)
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
+
+
 
 # Apache 2.0 License
 
