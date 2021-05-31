@@ -1,5 +1,7 @@
 # SaroraAPI
 
+Sarora API is a Virtual Bot API if you send a string to this you will recieve a respose string reply to your string it uses Machine Learning to Predict what to reply. You can see the types of respose the bot can give in intents.json file.
+
 
 # Apache 2.0 License
 
