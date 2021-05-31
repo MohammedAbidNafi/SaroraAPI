@@ -11,23 +11,21 @@
     {"tag": "greetingMore",
      "patterns": [ "How are you", "Whats up"],
      "responses": ["I am fine!, How about you?", "I am good, you?"],
-     "context_set": "howareyou"
+     "context_set": ""
     },
     {"tag": "greetingResponsePositive",
       "patterns": ["am good", "ok","am fine","cool"],
       "responses": ["Good to know that!","Cool"],
-      "context_filter": "howareyou"
+      "context_set": ""
     },
     {"tag": "greetingResponseNegative",
       "patterns": ["bad","worse", "depressed","sick"],
       "responses": ["That's Unfortunate","That's pretty bad", "Am not smart enough or else I would have helped you","Don't Worry I hope this is temporary"],
-      "context_filter": "howareyou"
-    },
-    {"tag": "negative",
-      "patterns": ["bad","worst"],
-      "responses": ["What is bad?","If it's me sorry but am trying to improve"],
       "context_set": ""
     },
+    {"tag": "master",
+      "patterns": ["whos your master","who created you", "who owns you"],
+      "responses": ["MargsApp owns me", "MargsApp is my leader","MargsApp is my master"]},
     {"tag": "goodbye",
      "patterns": ["cya", "Bye", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
      "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!","Bye Bye"],

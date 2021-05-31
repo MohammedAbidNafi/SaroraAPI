@@ -6,7 +6,7 @@ config:
     config:
       batch_input_shape: !!python/tuple
       - null
-      - 42
+      - 45
       dtype: float32
       name: dense_input
       ragged: false
@@ -17,7 +17,7 @@ config:
       activity_regularizer: null
       batch_input_shape: !!python/tuple
       - null
-      - 42
+      - 45
       bias_constraint: null
       bias_initializer:
         class_name: Zeros
