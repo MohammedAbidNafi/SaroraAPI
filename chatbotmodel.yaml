@@ -6,7 +6,7 @@ config:
     config:
       batch_input_shape: !!python/tuple
       - null
-      - 45
+      - 48
       dtype: float32
       name: dense_input
       ragged: false
@@ -17,7 +17,7 @@ config:
       activity_regularizer: null
       batch_input_shape: !!python/tuple
       - null
-      - 45
+      - 48
       bias_constraint: null
       bias_initializer:
         class_name: Zeros
@@ -52,7 +52,7 @@ config:
       kernel_regularizer: null
       name: dense_1
       trainable: true
-      units: 9
+      units: 11
       use_bias: true
   name: sequential
 keras_version: 2.5.0
