@@ -23,7 +23,7 @@
      "context_set": ""
     },
     {"tag": "greetingResponsePositive",
-      "patterns": ["am good", "ok","am fine","cool"],
+      "patterns": ["am good", "ok","am fine","cool","good"],
       "responses": ["Good to know that!","Cool"],
       "context_set": ""
     },
