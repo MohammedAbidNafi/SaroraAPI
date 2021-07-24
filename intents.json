@@ -13,7 +13,7 @@
 
     {"tag": "greetinginhindi",
       "patterns": ["namaste"],
-      "responses":["Namaste"],
+      "responses":["I dont speak hindi"],
       "context_set": "greeting"
     },
 
