@@ -5,9 +5,11 @@ import random
 import nltk
 import numpy
 from nltk.stem import LancasterStemmer
-from tensorflow.python.keras.layers import Dense
-from tensorflow.python.keras.models import Sequential
-from tensorflow.python.keras.models import model_from_yaml
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.models import Sequential, model_from_json
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 nltk.download('punkt')
 
@@ -20,7 +22,7 @@ try:
     with open("chatbot.pickle", "rb") as file:
         words, labels, training, output = pickle.load(file)
 
-except:
+except FileNotFoundError:
     words = []
     labels = []
     docs_x = []
@@ -70,15 +72,14 @@ except:
         pickle.dump((words, labels, training, output), file)
 
 try:
-    yaml_file = open('chatbotmodel.yaml', 'r')
-    loaded_model_yaml = yaml_file.read()
-    yaml_file.close()
-    myChatModel = model_from_yaml(loaded_model_yaml)
+    json_file = open('chatbotmodel.json', 'r')
+    loaded_model_json = json_file.read()
+    json_file.close()
+    myChatModel = model_from_json(loaded_model_json)
     myChatModel.load_weights("chatbotmodel.h5")
     print("Loaded model from disk")
 
-except:
-
+except FileNotFoundError:
     # Make our neural network
     myChatModel = Sequential()
     myChatModel.add(Dense(8, input_shape=[len(words)], activation='relu'))
@@ -88,17 +89,16 @@ except:
     myChatModel.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
     # train the model
-    myChatModel.fit(training, output, epochs=1000, batch_size=8)
+    myChatModel.fit(training, output, epochs=5000, batch_size=20)
 
-    # serialize model to yaml and save it to disk
-
-    model_yaml = myChatModel.to_yaml()
-    with open("chatbotmodel.yaml", "w") as y_file:
-        y_file.write(model_yaml)
+    # serialize model to JSON and save it to disk
+    model_json = myChatModel.to_json()
+    with open("chatbotmodel.json", "w") as json_file:
+        json_file.write(model_json)
 
     # serialize weights to HDF5
     myChatModel.save_weights("chatbotmodel.h5")
-    print("Saved model from disk")
+    print("Saved model to disk")
 
 
 def bag_of_words(s, words):
@@ -123,9 +123,9 @@ def chatWithBot(inputText):
     if numpy.all((numpyCurrentText == 0)):
         return "I didn't get that, try again"
 
-    result = myChatModel.predict(numpyCurrentText[0:1])
-    result_index = numpy.argmax(result)
-    tag = labels[result_index]
+    result = myChatModel.predict(numpyCurrentText.reshape(1, -1))  # Reshape to represent a batch of size 1
+    result_index = numpy.argmax(result, axis=-1)
+    tag = labels[result_index[0]]
 
     if result[0][result_index] > 0.7:
         for tg in data["intents"]:
@@ -136,8 +136,7 @@ def chatWithBot(inputText):
 
     else:
         return "I didn't get that, try again"
-
-
+    
 def chat():
     print("Start talking with the chatbot (try quit to stop)")
 
@@ -148,4 +147,4 @@ def chat():
 
         print(chatWithBot(inp))
 
-#chat()
+chat()
