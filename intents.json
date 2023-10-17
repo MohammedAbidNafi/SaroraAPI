@@ -9,7 +9,7 @@
     },
     {"tag": "afternoon",
         "patterns": ["Good afternoon"],
-        "responses": ["Good afternoon. How is your day going?"]
+        "responses": ["Good afternoon. How is your day going?","Good afternoon"]
     },
     {"tag": "evening",
         "patterns": ["Good evening"],
@@ -208,7 +208,7 @@
         "responses": ["A mental health disorder characterised by persistently depressed mood or loss of interest in activities, causing significant impairment in daily life."]
     },
     {"tag": "fact-5",
-        "patterns": ["How do i know if i have Depression?", "Am i depressed?", "Am i suffering from depression?", "Am i mentally ill?"],
+        "patterns": ["How do i know if i have Depression?", "Am i depressed?", "Am  i suffering from depression?", "Am i mentally ill?"],
         "responses": ["For a diagnosis of depression, a person needs to have experienced low mood or loss of interest or pleasure in life for at least 2 weeks. Also, they will have experienced the following symptoms: feelings of sadness, hopelessness, or irritability nearly every day."]
     },
     {"tag": "fact-6",
@@ -323,7 +323,5 @@
         "tag":"breakup",
         "patterns":["My girlfriend broke up with me.", "breakup","I can't get over my ex-boyfriend.", "can't move on","I miss my ex-girlfriend so much.", "miss ex","I feel so alone after the breakup.", "feel alone","What's the difference between sadness and depression?", "sadness vs depression","I can't stop thinking about my ex.","I feel like I'll never find someone else.","I'm having trouble sleeping since the breakup.","I feel so angry about the breakup."],
         "responses":["It's completely normal to feel that way. What specifically is bothering you the most about the breakup?","It's okay to miss someone you cared about. What activities usually help you feel better or distract you?","It's natural to think about someone you were close to. Let's explore these thoughts and emotions together. What memories are coming up for you?","It's common to worry about the future. Let's focus on your strengths and what you bring to a relationship. What qualities do you value in yourself?", "Difficulty sleeping is a common reaction to stress. Have you tried any relaxation techniques or mindfulness exercises before bedtime?","Anger is a natural part of the grieving process. Let's explore this emotion and find healthy ways to express and manage it. What activities usually help you feel calmer?"]
-    }
-
-    ]
+    } ]
 }

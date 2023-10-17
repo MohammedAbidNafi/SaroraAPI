@@ -127,7 +127,7 @@ def chatWithBot(inputText):
     result_index = numpy.argmax(result, axis=-1)
     tag = labels[result_index[0]]
 
-    if result[0][result_index] > 0.7:
+    if result[0][result_index] > 0.5:
         for tg in data["intents"]:
             if tg['tag'] == tag:
                 responses = tg['responses']
