@@ -12,4 +12,4 @@ def ChatWithBot():
 
 
 if __name__ == '__main__':
-    app.run(host='192.168.1.39', debug=True)
+    app.run(host='0.0.0.0', port=13000, debug=True)
