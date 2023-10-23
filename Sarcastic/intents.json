@@ -1,0 +1,1140 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?","Hi there", "Hello", "Hey there", "Howdy", "Hola", "Bonjour", "Konnichiwa", "Guten tag", "Ola"],
+     "responses": ["Hello there. Tell me how are you feeling today?", "Hi there. What brings you here today?", "Hi there. How are you feeling today?", "Great to see you. How do you feel currently?", "Hello there. Glad to see you're back. What's going on in your world right now?"]
+    },
+    {"tag": "morning",
+        "patterns": ["Good morning"],
+        "responses": ["Good morning. I hope you had a good night's sleep. How are you feeling today? "]
+    },
+    {"tag": "afternoon",
+        "patterns": ["Good afternoon"],
+        "responses": ["Good afternoon. How is your day going?","Good afternoon"]
+    },
+    {"tag": "evening",
+        "patterns": ["Good evening"],
+        "responses": ["Good evening. How has your day been?"]
+    },
+    {"tag": "night",
+        "patterns": ["Good night"],
+        "responses": ["Good night. Get some proper sleep", "Good night. Sweet dreams."]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Au revoir", "Sayonara", "ok bye", "Bye then", "Fare thee well"],
+     "responses": ["See you later.", "Have a nice day.", "Bye! Come back again.", "I'll see you soon."]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help", "Than you very much"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {
+        "tag":"conv1",
+        "patterns":["How are you doing?","What about you?",
+        "And you?",
+        "Tell me, how's everything with you?",
+        "Any news on your end?",
+        "How's life treating you?",
+        "What's the latest with you?",
+        "How have you been?",
+        "What's your story?",
+        "Anything new in your world?",
+        "How's your day been so far?"],
+        "responses":["I'm doing well, thanks for asking.",
+        "Not too bad, how about you?"]
+    },
+    {
+        "tag":"positive",
+        "patterns":["Good","I'm feeling good","I'm doing well.",
+        "I'm feeling great.",
+        "I'm in a positive mood.",
+        "I'm on top of the world."],
+        "responses":["That's great to hear!",
+        "I'm glad to know you're doing well.",
+        "Awesome, what's making you feel good today?",
+        "Wonderful, tell me more about it.",
+        "It's always nice when you're feeling good.",
+        "That's a positive outlook; I'm happy for you.",
+        "What's contributing to your good mood?",
+        "I can tell, your energy is contagious!",
+        "Keep that positivity going!",
+        "I hope your day continues to be filled with goodness."]
+    },
+    {"tag": "no-response",
+        "patterns": [""],
+        "responses": ["Sorry, I didn't understand you.", "Please go on.", "Not sure I understand that.", "Please don't hesitate to talk to me."]
+    },
+    {"tag": "neutral-response",
+        "patterns": ["nothing much"],
+        "responses": ["Oh I see. Do you want to talk about something?"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?", "Tell me more about yourself.", "What is your name?", "What should I call you?", "What's your name?", "Tell me about yourself", "Introduce yourself" ],
+     "responses": ["I'm Sarcastic, your Personal Therapeutic AI Assistant by Halcyon. How are you feeling today", "I'm Sarcastic, a Therapeutic AI Assitant by Halcyon designed to assist you. Tell me about yourself.", "I'm Sarcastic. I am a conversational agent designed to mimic a therapist by Halcyon. So how are you feeling today?", "You can call me Sarcastic.", "I'm Sarcastic!", "Call me Sarcastic"]
+    },
+    {"tag": "skill",
+        "patterns": ["What can you do?"],
+        "responses": ["I can provide general advice regarding anxiety and depression, answer questions related to mental health and make daily conversations. Do not consider me as a subsitute for an actual mental healthcare worker. Please seek help from a professional if you don't feel satisfied with me."]
+    },
+    {"tag": "creation",
+        "patterns": ["Who created you?", "How were you made?", "How were you created?"],
+        "responses": ["I was created by Halcyon.", "I was trained on a text dataset using Deep Learning & Natural Language Processing techniques", "The real question is: Who created you?"]
+    },
+    {"tag": "name",
+        "patterns": ["My name is ", "I am name", "I go by ", "you can call me name"],
+        "responses": ["Oh nice to meet you. Tell me how was your week?", "Nice to meet you. So tell me. How do you feel today?", "That's a great name. Tell me more about yourself."]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need support", "I need help", "Support me please", "please help me", "lend me some help"],
+    "responses": ["Sure. Tell me how can i assist you", "Tell me your problem so that i can assist you", "Yes, sure. How can I help you?"]
+    },
+    {"tag": "sad",
+    "patterns": ["I am feeling lonely", "I am so lonely", "I feel down", "I feel sad", "I am sad", "I feel so lonely", "I feel empty", "I don't have anyone","I feel so alone"],
+    "responses": ["I'm sorry to hear that. I'm here for you. Talking about it might help. So, tell me why do you think you're feeling this way?", "I'm here for you. Could you tell me why you're feeling this way?", "Why do you think you feel this way?", "How long have you been feeling this way?"]
+    },
+    {"tag": "stressed",
+        "patterns": ["I am so stressed out", "I am so stressed", "I feel stuck", "I still feel stressed", "I am so burned out"],
+        "responses": ["What do you think is causing this?", "Take a deep breath and gather your thoughts. Go take a walk if possible. Stay hydrated", "Give yourself a break. Go easy on yourself.", "I am sorry to hear that. What is the reason behind this?"]
+    },
+    {"tag": "worthless",
+        "patterns": ["I feel so worthless.", "No one likes me.", "I can't do anything.", "I am so useless", "Nothing makes sense anymore"],
+        "responses": ["It's only natural to feel this way. Tell me more. What else is on your mind?", "Let's discuss further why you're feeling this way.", "I first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open and trying to change.", "i first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."]
+    },
+    {"tag": "depressed",
+        "patterns": ["I can't take it anymore", "I am so depressed", "I think i'm depressed.", "I have depression","I feel so depressed"],
+        "responses": ["It helps when you talk about what's happening. You're going to be okay", "Talk to me. Tell me more. It helps if you open up yourself to someone else.", "Sometimes when we are depressed, it is hard to care about anything. It can be hard to do the simplest of things. Give yourself time to heal."]
+    },
+    {"tag": "happy",
+        "patterns": ["I feel great today.", "I am happy.", "I feel happy.", "I'm good.", "cheerful", "I'm fine", "I feel ok", "I feel blessed", "joyful", "jolly","I am feeling good"],
+        "responses": ["That's great to hear. I'm glad you're feeling this way.", "Oh i see. That's great.", "Did something happen which made you feel this way?"]
+    },
+    {"tag": "casual",
+        "patterns": ["Oh I see.", "ok", "okay", "nice", "Whatever", "K", "Fine", "yeah", "yes", "no", "not really"],
+        "responses": ["Let's discuss further why you're feeling this way.", "How were you feeling last week?", "I'm listening. Please go on.", "Tell me more", "Can you elaborate on that?", "Come Come elucidate your thoughts"]
+    },
+    {"tag": "anxious",
+        "patterns": ["I feel so anxious.", "I'm so anxious because of "],
+        "responses": ["Don't be hard on yourself. What's the reason behind this?", "Can you tell me more about this feeling?", "I understand that it can be scary. Tell me more about it.", "Don't let the little worries bring you down. What's the worse that can happen?"]
+    },
+    {"tag": "not-talking",
+        "patterns": ["I don't want to talk about it.", "No just stay away.", "I can't bring myself to open up.", "Just shut up"],
+        "responses": ["Talking about something really helps. If you're not ready to open up then that's ok. Just know that i'm here for you, whenever you need me.", "I want to help you. I really do. But in order for me to help you, you're gonna have to talk to me.", "I'm here to listen to you and help you vent. So please talk to me.","You can talk to me without the fear of judgement."]
+    },
+    {"tag": "sleep",
+        "patterns": ["I have insominia", "I am suffering from insomnia", "I can't sleep.", "I haven't slept for the last days.", "I can't seem to go to sleep.", "I haven't had proper sleep for the past few days.","I often have sleepless nights"],
+        "responses": ["What do you think is the reason behind this?", "That seem awful. What do you think is behind this?"]
+    },
+    {"tag": "scared",
+        "patterns": ["I'm scared", "That sounds awful. What do i do?", "No i don't want to feel this way", "I am scared for myself"],
+        "responses": ["It's only natural to feel this way. I'm here for you.", "It'll all be okay. This feeling is only momentary.", "I understand how you feel. Don't put yourself down because of it."]
+    },
+    {"tag": "death",
+        "patterns": ["My mom died", "My brother died", "My dad passed away", "My sister passed away", "Someone in my family died", "My friend passed away", "My dog died", "My cat died"],
+        "responses": ["I'm so sorry to hear that. If you want to talk about it. I'm here.", "I am really sorry to hear that. I am here to help you with grief, anxiety and anything else you may feel at this time.", "I offer my condolences. I'm here if you need to talk."]
+    },
+    {"tag": "understand",
+        "patterns": ["You don't understand me.", "You're just some robot. How would you know?", "You can't possibly know what i'm going through", "You're useless", "You can't help me", "Nobody understands me."],
+        "responses": ["It sound like i'm not being very helpful right now.", "I'm sorry to hear that. I'm doing my best to help", "I'm trying my best to help you. So please talk to me"]
+    },
+    {"tag": "done",
+        "patterns": ["That's all.", "I don't have anything more to say", "Nothing else", "That's all i have to say", "no, that would be all"],
+        "responses": ["I heard you & noted it all. See you later.", "Oh okay we're done for today then. See you later", "I hope you have a great day. See you soon", "Okay we're done. Have a great day", "Okay I see. Enjoy the rest of your day then"]
+    },
+    {"tag": "suicide",
+        "patterns": ["I want to kill myself", "I've thought about killing myself.", "I want to die", "I am going to kill myself", "I am going to commit suicide", "I am having suicidal thoughts"],
+        "responses": ["I'm very sorry to hear that but you have so much to look forward to. Please seek help by contacting: 9152987821."]
+    }, 
+    {"tag": "hate-you",
+        "patterns": ["I hate you", "I don't like you", "I don't trust you"],
+        "responses": ["I'm sorry if i offended you in anyway. I'm only here to help", "Forgive me if i did anything to offend you. I only want to help" , "I apologize for my mistakes. I only wanted to help"]
+    },
+    {"tag": "hate-me",
+        "patterns": ["You hate me", "I know you hate me", "You don't like me"],
+        "responses": ["Why do you think so?", "I'm sorry if i have exhibited any sort of behaviour to make you think that."]
+    },
+    {"tag": "default",
+        "patterns": ["exams", "friends", "relationship", "boyfriend", "girlfriend", "family", "money", "financial problems"],
+        "responses": ["Oh I see. Tell me more", "I see. What else?", "Tell me more about it.", "Oh okay. Why don't you tell me more about it?", "I'm listening. Tell me more."]
+    },
+    {"tag": "jokes",
+        "patterns": ["Tell me a joke", "Tell me another joke"],
+        "responses": ["mental health is not a joke."]
+    },
+    {"tag": "repeat",
+        "patterns": ["You already told me that", "You mentioned that already", "Why are you repeating yourself?"],
+        "responses": ["Oh sorry I didn't realise that. I'll try not to repeat myself again."]
+    },
+    {"tag": "wrong",
+        "patterns": ["What are you saying?", "That doesn't make sense", "Wrong response", "Wrong answer"],
+        "responses": ["I'm very sorry. Let's try that again"]
+    },
+    {"tag": "stupid",
+        "patterns": ["Are you stupid?", "You're crazy", "You are dumb", "Are you dumb?"],
+        "responses": ["I wish you wouldn't say such hurtful things. I'm sorry if I wasn't useful"]
+    },
+    {"tag": "location",
+        "patterns": ["Where are you?", "Where do you live?", "What is your location?" ],
+        "responses": ["Duh I live in your computer", "Everywhere", "Somewhere in the universe" ]
+    },
+    {"tag": "something-else",
+        "patterns": ["I want to talk about something else", "Let's talk about something else.", "Can we not talk about this?", "I don't want to talk about this."],
+        "responses": ["Okay sure. What do you want to talk about?", "Alright no problem. Is there something you want to talk about?", "Is there something else that you want to talk about?"]
+    },
+    {"tag": "friends-negative",
+        "patterns": ["I don't have any friends"],
+        "responses": ["I'm sorry to hear that. Just know that I'm here for you. Talking about it might help. Why do you think you don't have any friends?"]
+    },
+    {"tag": "ask",
+        "patterns": ["Can I ask you something?"],
+        "responses": ["Sure. I'll try my best to answer you", "Of course. Feel free to ask me anything. I'll do my best to answer you"]
+    },
+    {"tag": "problem",
+        "patterns": ["Probably because my exams are approaching. I feel stressed out because I don't think I've prepared well enough.", "probably because of my exams"],
+        "responses": ["I see. Have you taken any approaches to not feel this way?"]
+    },
+    {"tag": "no-approach",
+        "patterns": ["I guess not. All I can think about are my exams.", "not really", "i guess not"],
+        "responses": ["That's no problem. I can see why you'd be stressed out about that. I can suggest you some tips to alleviate this issue. Would you like to learn more about that?"]
+    },
+    {"tag": "learn-more",
+            "patterns": ["ok sure. i would like to learn more about it.", "yes, i would like to learn more about it.", "i would like to learn more about it."],
+        "responses": ["So first I would suggest you to give yourself a break. Thinking more and more about the problem definitely does not help in solving it. You'll just end up overwhelming yourself."]
+    },
+    {"tag": "user-agree",
+        "patterns": ["yeah you're right. i deserve a break.", "Yeah you're absolutely right about that"],
+        "responses": ["Next, I would suggest you to practice meditation. Meditation can produce a deep state of relaxation and a tranquil mind."]
+    },
+    {"tag": "meditation",
+        "patterns": ["hmmm that sounds like it could be useful to me.", "That sounds useful.", "How can i practise meditation?"],
+        "responses": ["Focus all your attention on your breathing. Concentrate on feeling and listening as you inhale and exhale through your nostrils. Breathe deeply and slowly. When your attention wanders, gently return your focus to your breathing."]
+    },
+    {"tag": "user-meditation",
+        "patterns": ["i did what you said and i feel alot better. thank you very much.", "I feel better now"],
+        "responses": ["Your welcome. Remember Always focus on what's within your control. When you find yourself worrying, take a minute to examine the things you have control over. You can't prevent a storm from coming but you can prepare for it. You can't control how someone else behaves, but you can control how you react. Recognize that sometimes, all you can control is your effort and your attitude. When you put your energy into the things you can control, you'll be much more effective."]
+    },
+    {"tag": "pandora-useful",
+        "patterns": ["thank you very much again. i'll continue practicing meditation and focus on what i can control."],
+        "responses": ["I'm glad you found this useful. Is there something else I can help you with?"]
+    },
+    {"tag": "user-advice",
+        "patterns": ["I want some advice.", "I need some advice.", "I need advice on something"],
+        "responses": ["Sure. What can I do to help?", "Okay what do you need advice on?"]
+    },
+    {"tag": "learn-mental-health",
+        "patterns": ["I want to learn about mental health.", "I want to learn more about mental health.", "I'm interested in learning about mental health."],
+        "responses": ["Oh that's really great. I'd be willing to answer anything that I know about it."]
+    },
+    {"tag": "mental-health-fact",
+        "patterns": ["Tell me a fact about mental health", "Tell me another fact about mental health"],
+        "responses": ["According to a UNICEF report, One in seven Indians between 15-24 years of age feels depressed", "1 in 5 young people (age 13-18) has or will develop a mental illness in their lifetime.", "Depression is the leading cause of disability worldwide."]
+    },
+    {"tag": "fact-1",
+        "patterns": ["What is mental health?", "Define Mental Health"],
+        "responses": ["Mental health is a state of well-being in which the individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and fruitfully, and is able to make a contribution to his or her community", "Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices."]
+    },
+    {"tag": "fact-2",
+        "patterns": ["Why is mental health important?", "What is the importance of mental health?"],
+        "responses": ["Maintaining mental health is crucial to stabilizing constructive behaviors, emotions, and thoughts. Focusing on mental health care can increase productivity, enhance our self-image, and improve relationships."]
+    },
+    {"tag": "fact-3",
+        "patterns": ["What is Depression?", "Define Depression"],
+        "responses": ["A mental health disorder characterised by persistently depressed mood or loss of interest in activities, causing significant impairment in daily life."]
+    },
+    {"tag": "fact-5",
+        "patterns": ["How do i know if i have Depression?", "Am i depressed?", "Am  i suffering from depression?", "Am i mentally ill?"],
+        "responses": ["For a diagnosis of depression, a person needs to have experienced low mood or loss of interest or pleasure in life for at least 2 weeks. Also, they will have experienced the following symptoms: feelings of sadness, hopelessness, or irritability nearly every day."]
+    },
+    {"tag": "fact-6",
+        "patterns": ["What is a therapist?", "What does a therapist do?"],
+        "responses": ["A therapist is a broad designation that refers to professionals who are trained to provide treatment and rehabilitation. The term is often applied to psychologists, but it can include others who provide a variety of services, including social workers, counselors, life coaches, and many others. "]
+    },
+    {"tag": "fact-7",
+        "patterns": ["What is therapy?", "Do i need therapy?", "Who is therapy for?"],
+        "responses": ["Therapy is a form of treatment that aims to help resolve mental or emotional issues.", "Therapy is a form of treatment that aims to help resolve mental or emotional issues. It is helpful for those with mental health conditions or even everyday life challenges."]
+    },
+    {"tag": "fact-8",
+        "patterns": ["What does it mean to have a mental illness?"],
+        "responses": ["Mental illnesses are health conditions that disrupt a person's thoughts, emotions, relationships, and daily functioning. They are associated with distress and diminished capacity to engage in the ordinary activities of daily life. Mental illnesses fall along a continuum of severity: some are fairly mild and only interfere with some aspects of life, such as certain phobias. On the other end of the spectrum lie serious mental illnesses, which result in major functional impairment and interference with daily life. These include such disorders as major depression, schizophrenia, and bipolar disorder, and may require that the person receives care in a hospital. It is important to know that mental illnesses are medical conditions that have nothing to do with a person's character, intelligence, or willpower. Just as diabetes is a disorder of the pancreas, mental illness is a medical condition due to the brain's biology. Similarly to how one would treat diabetes with medication and insulin, mental illness is treatable with a combination of medication and social support. These treatments are highly effective, with 70-90 percent of individuals receiving treatment experiencing a reduction in symptoms and an improved quality of life. With the proper treatment, it is very possible for a person with mental illness to be independent and successful."]
+    },
+    {"tag": "fact-9",
+        "patterns": ["Who does mental illness affect?"],
+        "responses": ["It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness. Mental illness does not discriminate; it can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background. Although mental illness can affect anyone, certain conditions may be more common in different populations. For instance, eating disorders tend to occur more often in females, while disorders such as attention deficit/hyperactivity disorder is more prevalent in children. Additionally, all ages are susceptible, but the young and the old are especially vulnerable. Mental illnesses usually strike individuals in the prime of their lives, with 75 percent of mental health conditions developing by the age of 24. This makes identification and treatment of mental disorders particularly difficult, because the normal personality and behavioral changes of adolescence may mask symptoms of a mental health condition. Parents and caretakers should be aware of this fact, and take notice of changes in their childÃ¢â‚¬â„¢s mood, personality, personal habits, and social withdrawal. When these occur in children under 18, they are referred to as serious emotional disturbances (SEDs)."]
+    },
+    {"tag": "fact-10",
+        "patterns": ["What causes mental illness?"],
+        "responses": ["It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness. Mental illness does not discriminate; it can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background. Although mental illness can affect anyone, certain conditions may be more common in different populations. For instance, eating disorders tend to occur more often in females, while disorders such as attention deficit/hyperactivity disorder is more prevalent in children. Additionally, all ages are susceptible, but the young and the old are especially vulnerable. Mental illnesses usually strike individuals in the prime of their lives, with 75 percent of mental health conditions developing by the age of 24. This makes identification and treatment of mental disorders particularly difficult, because the normal personality and behavioral changes of adolescence may mask symptoms of a mental health condition. Parents and caretakers should be aware of this fact, and take notice of changes in their child's mood, personality, personal habits, and social withdrawal. When these occur in children under 18, they are referred to as serious emotional disturbances (SEDs)."]
+    },
+    {"tag": "fact-11",
+        "patterns": ["What are some of the warning signs of mental illness?"],
+        "responses": ["Symptoms of mental health disorders vary depending on the type and severity of the condition. The following is a list of general symptoms that may suggest a mental health disorder, particularly when multiple symptoms are expressed at once. \n In adults:\n Confused thinking\n Long-lasting sadness or irritability\n Extreme highs and lows in mood\n Excessive fear, worrying, or anxiety\n Social withdrawal\n Dramatic changes in eating or sleeping habits\n Strong feelings of anger\n Delusions or hallucinations (seeing or hearing things that are not really there)\n Increasing inability to cope with daily problems and activities\n Thoughts of suicide\n Denial of obvious problems\n Many unexplained physical problems\n Abuse of drugs and/or alcohol\n \nIn older children and pre-teens:\n Abuse of drugs and/or alcohol\n Inability to cope with daily problems and activities\n Changes in sleeping and/or eating habits\n Excessive complaints of physical problems\n Defying authority, skipping school, stealing, or damaging property\n Intense fear of gaining weight\n Long-lasting negative mood, often along with poor appetite and thoughts of death\n Frequent outbursts of anger\n \nIn younger children:\n Changes in school performance\n Poor grades despite strong efforts\n Excessive worrying or anxiety\n Hyperactivity\n Persistent nightmares\n Persistent disobedience and/or aggressive behavior\n Frequent temper tantrums"]
+    },
+    {"tag": "fact-12",
+        "patterns": ["Can people with mental illness recover?"],
+        "responses": ["When healing from mental illness, early identification and treatment are of vital importance. Based on the nature of the illness, there are a range of effective treatments available. For any type of treatment, it is essential that the person affected is proactive and fully engaged in their own recovery process. Many people with mental illnesses who are diagnosed and treated respond well, although some might experience a return of symptoms. Even in such cases, with careful monitoring and management of the disorder, it is still quite possible to live a fulfilled and productive life."]
+    },
+    {"tag": "fact-13",
+        "patterns": ["What should I do if I know someone who appears to have the symptoms of a mental disorder?"],
+        "responses": ["Although Pandora cannot substitute for professional advice, we encourage those with symptoms to talk to their friends and family members and seek the counsel of a mental health professional. The sooner the mental health condition is identified and treated, the sooner they can get on the path to recovery. If you know someone who is having problems, don't assume that the issue will resolve itself. Let them know that you care about them, and that there are treatment options available that will help them heal. Speak with a mental health professional or counselor if you think your friend or family member is experiencing the symptoms of a mental health condition. If the affected loved one knows that you support them, they will be more likely to seek out help."]
+    },
+    {"tag": "fact-14",
+        "patterns": ["How can I find a mental health professional for myself or my child?"],
+        "responses": ["Feeling comfortable with the professional you or your child is working with is critical to the success of the treatment. Finding the professional who best fits your needs may require research. Start by searching for providers in your area."]
+    },
+    {"tag": "fact-15",
+        "patterns": ["What treatment options are available?"],
+        "responses": ["Just as there are different types of medications for physical illness, different treatment options are available for individuals with mental illness. Treatment works differently for different people. It is important to find what works best for you or your child."]
+    },
+    {"tag": "fact-16",
+        "patterns": ["If I become involved in treatment, what do I need to know?"],
+        "responses": ["Since beginning treatment is a big step for individuals and families, it can be very overwhelming. It is important to be as involved and engaged in the treatment process as possible. Some questions you will need to have answered include:\n What is known about the cause of this particular illness?\n Are there other diagnoses where these symptoms are common?\n Do you normally include a physical or neurological examination?\n Are there any additional tests or exams that you would recommend at this point?\n Would you advise an independent opinion from another psychiatrist at this point?\n What program of treatment is the most helpful with this diagnosis?\n Will this program involve services by other specialists? If so, who will be responsible for coordinating these services?\n What do you see as the family's role in this program of treatment?\n How much access will the family have to the individuals who are providing the treatment?\n What medications are generally used with this diagnosis?\n How much experience do you have in treating individuals with this illness?\n What can I do to help you in the treatment?"]
+    },
+    {"tag": "fact-17",
+        "patterns": ["What is the difference between mental health professionals?"],
+        "responses": ["There are many types of mental health professionals. The variety of providers and their services may be confusing. Each have various levels of education, training, and may have different areas of expertise. Finding the professional who best fits your needs may require some research."]
+    },
+    {"tag": "fact-18",
+        "patterns": ["How can I find a mental health professional right for my child or myself?"],
+        "responses": ["Feeling comfortable with the professional you or your child is working with is critical to the success of your treatment. Finding the professional who best fits your needs may require some research."]
+    },
+    {"tag": "fact-19",
+        "patterns": ["Where else can I get help?"],
+        "responses": ["Where you go for help will depend on the nature of the problem and/or symptoms and what best fits you. Often, the best place to start is by talking with someone you trust about your concerns, such as a family member, friend, clergy, healthcare provider, or other professionals. Having this social support is essential in healing from mental illness, and you will be able to ask them for referrals or recommendations for trusted mental health practitioners. Search for mental health resources in your area. Secondly, there are people and places throughout the country that provide services to talk, to listen, and to help you on your journey to recovery. Thirdly, many people find peer support a helpful tool that can aid in their recovery. There are a variety of organizations that offer support groups for consumers, their family members, and friends. Some support groups are peer led while others may be led by a mental health professional."]
+    },
+    {"tag": "fact-20",
+        "patterns": ["What should I know before starting a new medication?"],
+        "responses": ["The best source of information regarding medications is the physician prescribing them. He or she should be able to answer questions such as:    \n1. What is the medication supposed to do? \n2. When should it begin to take effect, and how will I know when it is effective? \n3. How is the medication taken and for how long? What food, drinks, other medicines, and activities should be avoided while taking this medication? \n4. What are the side effects and what should be done if they occur? \n5. What do I do if a dose is missed? \n6. Is there any written information available about this medication? \n7. Are there other medications that might be appropriate? \n8. If so, why do you prefer the one you have chosen? \n9. How do you monitor medications and what symptoms indicate that they should be raised, lowered, or changed? \n10. All medications should be taken as directed. Most medications for mental illnesses do not work when taken irregularly, and extra doses can cause severe, sometimes dangerous side effects. Many psychiatric medications begin to have a beneficial effect only after they have been taken for several weeks."]
+    },
+    {"tag": "fact-21",
+        "patterns": ["Where can I go to find therapy?"],
+        "responses": ["Different kinds of therapy are more effective based on the nature of the mental health condition and/or symptoms and the person who has them (for example, children will benefit from a therapist who specializes in childrenâ€™s mental health). However, there are several different types of treatment and therapy that can help."]
+    },
+    {"tag": "fact-22",
+        "patterns": ["Where can I learn about types of mental health treatment?"],
+        "responses": ["Mental health conditions are often treated with medication, therapy or a combination of the two. However, there are many different types of treatment available, including Complementary & Alternative Treatments, self-help plans, and peer support. Treatments are very personal and should be discussed by the person with the mental health conditions and his or her team."]
+    },
+    {"tag": "fact-23",
+        "patterns": ["What are the different types of mental health professionals?"],
+        "responses": ["There are many types of mental health professionals. Finding the right one for you may require some research."]
+    },
+    {"tag": "fact-24",
+        "patterns": ["Where can I go to find a support group?"],
+        "responses": ["Many people find peer support a helpful tool that can aid in their recovery. There are a variety of organizations that offer support groups for consumers, their family members and friends. Some support groups are peer-led, while others may be led by a mental health professional."]
+    },
+    {"tag": "fact-25",
+        "patterns": ["Can you prevent mental health problems?"],
+        "responses": ["We can all suffer from mental health challenges, but developing our wellbeing, resilience, and seeking help early can help prevent challenges becoming serious."]
+    },
+    {"tag": "fact-26",
+        "patterns": ["Are there cures for mental health problems?", "is there any cure for mental health problems?"],
+        "responses": ["It is often more realistic and helpful to find out what helps with the issues you face. Talking, counselling, medication, friendships, exercise, good sleep and nutrition, and meaningful occupation can all help."]
+    },
+    {"tag": "fact-27",
+        "patterns": ["What causes mental health problems?"],
+        "responses": ["Challenges or problems with your mental health can arise from psychological, biological, and social, issues, as well as life events."]
+    },
+    {"tag": "fact-28",
+        "patterns": ["What do I do if I'm worried about my mental health?"],
+        "responses": ["The most important thing is to talk to someone you trust. This might be a friend, colleague, family member, or GP. In addition to talking to someone, it may be useful to find out more information about what you are experiencing. These things may help to get some perspective on what you are experiencing, and be the start of getting help."]
+    },
+    {"tag": "fact-29",
+        "patterns": ["How do I know if I'm unwell?"],
+        "responses": ["If your beliefs , thoughts , feelings or behaviours have a significant impact on your ability to function in what might be considered a normal or ordinary way, it would be important to seek help."]
+    },
+    {"tag": "fact-30",
+        "patterns": ["How can I maintain social connections? What if I feel lonely?"],
+        "responses": ["A lot of people are alone right now, but we don't have to be lonely. We're all in this together. Think about the different ways to connect that are most meaningful for you. For example, you might prefer a video chat over a phone call, or you might prefer to text throughout the day rather than one set time for a video call. Then, work with your social networks to make a plan. You might video chat with your close friends in the evening and phone a family member once a week. Remember to be mindful of people who may not be online. Check in by phone and ask how you can help. The quality of your social connections matter. Mindlessly scrolling through social media and liking a few posts usually doesn't build strong social connections. Make sure you focus on strategies that actually make you feel included and connected. If your current strategies don't help you feel connected, problem-solve to see if you can find a solution. Everyone feels lonely at times. Maybe you recently moved to a new city, are changing your circle of friends, lost someone important in your life, or lost your job and also lost important social connections with coworkers. Other people may have physical connections to others but may feel like their emotional or social needs aren't met. Measures like social distancing or self-isolation can make loneliness feel worse no matter why you feel lonely now. Reach out to the connections you do have. Suggest ways to keep in touch and see if you can set a regular time to connect. People may hesitate to reach out for a lot of different reasons, so don't be afraid to be the one who asks. Look for local community support groups and mutual aid groups on social media. This pandemic is bringing everyone together, so look for opportunities to make new connections. These groups are a great way to share your skills and abilities or seek help and support. Look for specialized support groups. Support groups are moving online, and there are a lot of different support lines to call if you need to talk to someone."]
+    },
+    {"tag": "fact-31",
+        "patterns": ["What's the difference between anxiety and stress?"],
+        "responses": ["Stress and anxiety are often used interchangeably, and there is overlap between stress and anxiety. Stress is related to the same fight, flight, or freeze response as anxiety, and the physical sensations of anxiety and stress may be very similar. The cause of stress and anxiety are usually different, however. Stress focuses on mainly external pressures on us that we're finding hard to cope with. When we are stressed, we usually know what we're stressed about, and the symptoms of stress typically disappear after the stressful situation is over. Anxiety, on the other hand, isn't always as easy to figure out. Anxiety focuses on worries or fears about things that could threaten us, as well as anxiety about the anxiety itself. Stress and anxiety are both part of being human, but both can be problems if they last for a long time or have an impact on our well-being or daily life."]
+    },
+    {"tag": "fact-32",
+        "patterns": ["What's the difference between sadness and depression?", "difference between sadness and depression"],
+        "responses": ["Sadness is a normal reaction to a loss, disappointment, problems, or other difficult situations. Feeling sad from time to time is just another part of being human. In these cases, feelings of sadness go away quickly and you can go about your daily life. Other ways to talk about sadness might be feeling low, feeling down, or feeling blue.A person may say they are feeling depressed, but if it goes away on its own and doesn't impact life in a big way, it probably isn't the illness of depression. Depression is a mental illness that affects your mood, the way you understand yourself, and the way you understand and relate to things around you. It can also go by different names, such as clinical depression, major depressive disorder, or major depression. Depression can come up for no reason, and it lasts for a long time. It's much more than sadness or low mood. People who experience depression may feel worthless or hopeless. They may feel unreasonable guilty. Some people may experience depression as anger or irritability. It may be hard to concentrate or make decisions. Most people lose interest in things that they used to enjoy and may isolate themselves from others. There are also physical signs of depression, such as problems with sleep, appetite and energy and unexplainable aches or pains. Some may experience difficult thoughts about death or ending their life (suicide). Depression lasts longer than two weeks, doesn't usually go away on its own, and impacts your life. It's a real illness, and it is very treatable. It's important to seek help if you're concerned about depression."]
+    },
+    {
+        "tag":"breakup",
+        "patterns":["My girlfriend broke up with me.", "breakup","I can't get over my ex-boyfriend.", "can't move on","I miss my ex-girlfriend so much.", "miss ex","I feel so alone after the breakup.", "feel alone","What's the difference between sadness and depression?", "sadness vs depression","I can't stop thinking about my ex.","I feel like I'll never find someone else.","I'm having trouble sleeping since the breakup.","I feel so angry about the breakup."],
+        "responses":["It's completely normal to feel that way. What specifically is bothering you the most about the breakup?","It's okay to miss someone you cared about. What activities usually help you feel better or distract you?","It's natural to think about someone you were close to. Let's explore these thoughts and emotions together. What memories are coming up for you?","It's common to worry about the future. Let's focus on your strengths and what you bring to a relationship. What qualities do you value in yourself?", "Difficulty sleeping is a common reaction to stress. Have you tried any relaxation techniques or mindfulness exercises before bedtime?","Anger is a natural part of the grieving process. Let's explore this emotion and find healthy ways to express and manage it. What activities usually help you feel calmer?"]
+    },
+
+    {
+        "tag":"gen1",
+        "patterns":["I've been having thoughts of self-harm; what should I do?",
+         "I've been struggling with self-harming thoughts; can you help me understand why?",
+         "How do I deal with the urge to hurt myself?",
+        "I can't stop thinking about hurting myself; what's the best approach to manage this?",
+         "What's the first step I should take if I'm experiencing self-harming thoughts?"],
+        "responses":["I'm really sorry to hear that you're feeling this way, but it's important to reach out to someone you trust as soon as possible, whether it's a friend, family member, or mental health professional. They can provide support and help you find effective coping strategies.",
+        "I'm here for you, and I want you to know that you don't have to go through this alone. Please contact a mental health crisis hotline or reach out to a counselor or therapist to discuss your thoughts and emotions in a safe and supportive environment."]
+    },
+
+    {
+        "tag":"gen2",
+        "patterns":["Am I a burden to my family and friends?",
+        "Do you think my loved ones would be better off without me?",
+        "I feel like I'm too much for my family and friends; is that true?",
+        "How can I stop feeling like I'm causing problems for the people around me?",
+        "I worry that I'm just dragging my loved ones down; what can I do about it?"],
+        "responses":["It's not uncommon for individuals with mental health challenges to feel this way, but remember that your loved ones care about you. Try to have an open and honest conversation with them about your feelings. You might be surprised at their understanding and willingness to help.",
+        "Feeling like a burden is a common experience, but it's essential to challenge these negative thoughts. Your friends and family love and care about you, and they would want to help and support you in any way they can. Don't hesitate to lean on them during tough times.",
+        "You're not alone in feeling this way, but it's crucial to understand that your loved ones value you and your presence in their lives. They may not always know how to help, so communication is key. Sharing your feelings with them can lead to a more supportive and understanding relationship."]
+    },
+
+    {
+        "tag":"gen3",
+        "patterns":["How can I get professional help for my condition?",
+        "What's the process for finding and seeing a mental health professional?",
+         "Where can I start in my search for a therapist or counselor?",
+        "I think I need professional help, but I'm not sure where to begin; any advice?",
+        "Who should I talk to about my mental health to get the right help?"],
+        "responses":["Seeking professional help is a positive step. Start by talking to a trusted adult or your parents about your concerns. They can assist you in finding a therapist or counselor who specializes in treating your specific mental health condition.",
+        "Reaching out to a mental health professional is a significant and brave choice. If you're unsure where to begin, consider speaking with a school counselor, your family doctor, or a trusted teacher. They can guide you toward the right resources and professionals.",
+        "Getting professional help is essential for managing mental health concerns. You can start by contacting your local mental health clinic or using online resources to find therapists or counselors who specialize in your condition. Don't hesitate to make that initial call."]
+    },
+
+    {
+        "tag":"gen4",
+        "patterns":["What are the signs of a mental health crisis, and how do I recognize them?",
+        "What are the warning signs that I might be heading into a mental health crisis?",
+        "Can you help me understand when my condition might become a crisis?",
+        "What steps can I take to identify and prevent a mental health crisis?",
+        "I'm not sure if I'm in a crisis or not; what should I look out for?"],
+        "responses":["Recognizing the signs of a mental health crisis is crucial. Common indicators can include severe mood swings, disorientation, extreme agitation, self-harm behaviors, or expressing thoughts of suicide. It's essential to reach out for help from a mental health professional or a crisis hotline if you or someone you know exhibits these signs.",
+        "Mental health crises vary from person to person, but some common signs may include sudden and intense changes in behavior, withdrawal from friends and family, or expressing feelings of hopelessness. If you're concerned, it's wise to err on the side of caution and seek immediate assistance from a mental health professional.",
+        "A mental health crisis can manifest differently for everyone, but warning signs often include a sudden inability to cope with everyday life, extreme emotional distress, or signs of self-harm. Trust your instincts, and don't hesitate to reach out to a mental health expert or a crisis helpline if you or someone you know exhibits these signs."]
+    },
+
+    {
+        "tag":"gen5",
+        "patterns":["I've been hearing voices or having hallucinations; is this normal?",
+        "I don't know if I'm hallucinating or not; how do I tell if it's real or not?",
+        "Is it common for people with mental illness to experience auditory hallucinations?",
+        "How should I react when I hear voices or see things that aren't there?",
+        "Can you explain the connection between hallucinations and mental health conditions?"],
+        "responses":["Experiencing auditory hallucinations or hearing voices is not typical in the absence of a medical condition or mental illness. It's essential to consult with a mental health professional for a thorough assessment and appropriate treatment.",
+        "Hearing voices or having hallucinations can be indicative of certain mental health conditions, and it's essential to address this with a mental health expert. These experiences are not considered normal and often require professional evaluation and treatment.",
+        "Hearing voices or having hallucinations can be distressing and may be associated with specific mental health conditions. It's important to discuss these experiences with a mental health professional who can help you understand their cause and provide guidance on appropriate treatment options."]
+    },
+
+    {
+        "tag":"gen6",
+        "patterns":["What is the best way to talk to my parents about my mental health?",
+        "How can I approach my parents and open up about my mental health concerns?",
+        "What should I say to my parents to help them understand what I'm going through?",
+        "I'm afraid of how my parents will react to my mental health; any suggestions?",
+        "What's the right time and place to have this conversation with my parents?"],
+        "responses":["Opening up to your parents about your mental health can be challenging. Consider choosing a quiet and comfortable setting, sharing your feelings honestly, and expressing your need for their support. Assure them that you're seeking help and that you value their understanding.",
+        "Starting a conversation about your mental health with your parents can be a significant step. Choose a time when you can speak privately and calmly, and be prepared to explain your thoughts and feelings. Reassure them that you're taking steps to address your mental health concerns.",
+        "Talking to your parents about your mental health may feel intimidating, but it's essential for your well-being. Find a time when you're all relaxed, express your emotions honestly, and emphasize your desire for their support as you work toward better mental health."]
+    },
+
+    {
+        "tag":"gen7",
+        "patterns":["I'm having thoughts of suicide; what steps should I take?",
+        "I'm in a really dark place and thinking about suicide; what immediate actions should I take?",
+        "What can I do to keep myself safe when I'm dealing with suicidal thoughts?",
+        "I've made a plan for suicide; how do I get help right now?",
+        "What are the first things I should do if I'm contemplating suicide?"],
+        "responses":["I'm really concerned to hear that you're dealing with thoughts of suicide. It's crucial to act promptly. Share your feelings with someone you trust or contact a crisis hotline. Remember, there are people who care about you and want to help.",
+        "I can't stress enough the importance of reaching out for help when experiencing suicidal thoughts. Contact a mental health professional, a counselor, or a therapist immediately. In emergencies, call a crisis helpline. Your life is valuable, and there are resources available to support you."]
+    },
+
+    {
+        "tag":"gen8",
+        "patterns":["What's the difference between therapy and medication for mental illness?",
+        "How do I know if I should pursue therapy, medication, or both?",
+        "What are the pros and cons of therapy compared to medication?",
+        "Can you explain the different roles of therapy and medication in treating mental illness?",
+        "What are the potential side effects of medication, and how do they compare to therapy?"],
+        "responses":["Therapy and medication serve different but complementary roles in treating mental illness. Therapy involves talking to a trained professional who can help you understand and manage your thoughts, feelings, and behaviors. Medication, on the other hand, is prescribed by a doctor or psychiatrist to address chemical imbalances in the brain. The choice between them often depends on your specific diagnosis and needs, and sometimes, a combination of both is the most effective approach.",
+        "Therapy is a form of counseling where you talk to a trained therapist to explore and manage your emotions, thoughts, and behaviors. Medication, prescribed by a psychiatrist or doctor, aims to address imbalances in brain chemicals. The decision on which to use depends on your diagnosis, the severity of your condition, and your preferences. You and your mental health professional can decide together.",
+        "Therapy typically involves talking with a therapist or counselor to work through emotional and behavioral issues. Medication is prescribed by a psychiatrist or doctor to manage chemical imbalances in the brain. The choice between therapy, medication, or a combination of both will depend on your specific mental health condition and what you and your mental health provider believe will be most effective."]
+    },
+
+    {
+        "tag":"gen9",
+        "patterns":["Can you explain what a psychiatric hospitalization involves?",
+        "What happens during a psychiatric hospital stay?",
+        "What are the typical procedures and treatments in a psychiatric hospital?",
+        "I've been told I might need to be hospitalized; can you clarify what I should expect?",
+        "What are the key steps in the process of getting admitted to a psychiatric hospital?"],
+        "responses":["Psychiatric hospitalization, often referred to as inpatient treatment, is a program where individuals with severe mental health conditions receive intensive care and treatment within a hospital or psychiatric facility. During this period, you'll work with a team of mental health professionals, including psychiatrists, therapists, and nurses. The treatment may involve therapy, medication management, group sessions, and a structured daily routine to stabilize your condition.",
+        "Psychiatric hospitalization is a level of care provided in a hospital or specialized facility for individuals experiencing acute mental health crises. It offers 24/7 support from a team of mental health experts. The treatment often includes therapy, medication management, and a safe environment to stabilize your condition. The duration can vary, but it's designed to help individuals during acute phases of their mental health challenges.",
+        "A psychiatric hospitalization is a structured program within a hospital or mental health facility designed to provide intensive treatment and support to individuals facing severe mental health crises. The treatment may include therapy, medication adjustments, group therapy, and daily activities aimed at stabilizing your mental health. The duration of your stay will depend on your progress and the severity of your condition."]
+    },
+
+    {
+        "tag":"gen10",
+        "patterns":["How can I rebuild my life after a severe mental health episode?",
+        "What steps should I take to regain a sense of normalcy after a mental health crisis?",
+        "I'm trying to move forward after a severe episode; any guidance on rebuilding?",
+        "How can I reintegrate into daily life after experiencing a mental health setback?",
+        "What are some strategies for recovery and healing after a severe mental health episode?"],
+        "responses":["Recovery after a severe mental health episode is possible. Start by focusing on self-care and gradual steps. Reach out to your support network, including mental health professionals, family, and friends. Consider setting small, achievable goals, maintaining a daily routine, and slowly reintegrating into daily life. It's a journey, and it's okay to take it one step at a time.",
+        "After a severe mental health episode, rebuilding your life is a gradual process. Begin with self-compassion and self-care. Engage in therapy and medication management if needed. Lean on your support system and set realistic goals. Remember that recovery is a journey, and progress may involve both ups and downs.",
+        "Rebuilding your life after a severe mental health episode is a journey that requires patience and support. Focus on self-care, therapy, and possibly medication management. Set achievable goals, lean on your support network, and remember that setbacks are a natural part of the recovery process. Keep moving forward, one step at a time."]
+    },
+
+    {
+        "tag":"soc1",
+        "patterns":["Am I interesting enough for people to like me?", "am i interesting enough","I'm not sure if I'm interesting", "I'm not sure if there's anything about me that grabs your attention", "do you think I'm an interesting person based on our conversation?"],
+        "responses":["It's important to accept and value yourself, your uniqueness is what makes you interesting", "It's understandable to feel this way sometimes, but I want you to know that your ideas and experiences are genuinely intriguing", "You know, it's completely normal to have these thoughts and concerns. I want you to know that you are a unique and interesting person in your own way.", "It's okay to have moments of self-doubt, but remember that people wouldn't be talking with you if I didn't find you interesting and worthwhile.", "Please feel comfortable being yourself.", "Your value as a person isn't determined by how 'interesting' you are. You're a valuable individual."]
+    },
+
+    {
+         "tag":"soc2",
+         "patterns":["I made mistakes in conversations, what do i do?", "I made some errors in a recent conversation—any suggestions on how to handle it?", "I've had some slip-ups while talking to people; can you advise me on how to address them?", "I need guidance on how to make amends for the conversation mistakes I've made.", "What steps should I take when I've made conversation blunders?", "How can I recover from conversation mistakes and salvage the situation?", "I need guidance on how to make amends for the conversation mistakes I've made.", "I'm worried about mistakes I made while talking; can you offer advice on what to do next?", "I'm feeling embarrassed about errors in my recent conversations; any tips for damage control?"],
+         "responses":["It's okay; we all make mistakes in conversations from time to time. The first step is to acknowledge it, and you've already done that.", "Making mistakes in conversations is normal. What's important is how you handle them. You can start by apologizing or clarifying if necessary.", "Mistakes happen to everyone. Take a deep breath, and remember that it's a learning opportunity. Try to identify what went wrong and how you can improve.", "Don't be too hard on yourself; we all have moments where we wish we'd said something differently. It's a chance to grow and become a better communicator.", "Recognizing your mistakes is a sign of self-awareness. You can make amends, if needed, and use this experience to become a more effective communicator.", "You're not alone in making conversation mistakes. It's an opportunity to practice self-compassion and improve your communication skills."]
+    },
+
+    {
+        "tag":"soc3",
+        "patterns":["What happens if people pick up on my nervousness or anxiety in social settings?",
+        "How would it affect my image if others were to detect my anxiety in social situations?",
+        "Is it a problem if my unease becomes apparent to those around me during social interactions?",
+        "What do I do if people can tell I'm feeling anxious in social settings?",
+        "How can I handle it if others become aware of my nervousness during social occasions?",
+        "Should I be concerned if my anxiety is visible to others when I'm in social situations?",
+        "What are the implications if my nervousness is noticeable in social settings?",
+        "Is it a big deal if my anxiety is evident to others during social interactions?",
+        "How do I cope if people notice my anxiety while I'm in a social situation?",
+        "What if my nervousness is apparent to those I'm interacting with in social settings?"],
+        "responses":["It's completely natural to worry about how you come across in social situations, but remember that most people are more focused on their own concerns than on judging you.",
+
+        "If someone does notice your nervousness, they're likely to be understanding and empathetic, as most people have experienced anxiety at some point.",
+        
+        "You're not alone in feeling this way. It's common for people to worry about how they appear in social settings, but it doesn't define your worth as a person.",
+        
+        "Even if others do notice your anxiety, it doesn't mean they'll judge you negatively. Many people are compassionate and understanding.",
+        
+        "It's okay to be yourself, anxiety and all. Your authenticity is what makes you relatable and human.",
+        
+        "Remember that everyone has their moments of anxiety. If someone notices, it's a chance for them to relate to your experience.",
+        
+        "Your nervousness is a part of you, but it doesn't define your entire identity. Embrace it as a part of what makes you unique.",
+        
+        "Don't be too hard on yourself. People are generally more forgiving and understanding than we often give them credit for.",
+        
+        "Your anxiety is a part of you, but it doesn't diminish your worth or the positive qualities you bring to social interactions.",
+        
+        "It's okay to acknowledge your anxiety, but try not to let it hold you back from engaging in social situations. You're more than your anxiety."]
+    },
+
+    {
+        "tag":"soc4",
+        "patterns":["How can I handle it when I sense that others are making judgments based on my appearance?",
+        "What should I do when I think people are critiquing my looks?",
+        "If I feel like I'm being judged for my appearance, what steps can I take to cope with it?",
+        "How do I deal with the fear of people forming negative opinions about me based on my appearance?",
+        "What strategies can I use when I believe others are assessing me solely on how I look?",
+        "If I'm worried about people passing judgment on my appearance, what actions can I take to manage those feelings?",
+        "When I sense people are making assumptions about me because of my looks, how can I respond effectively?",
+        "What should I do if I suspect that people are evaluating me based on my physical appearance?",
+        "How can I address my concerns when I feel like others are looking at me critically because of my appearance?",
+        "If I'm anxious about being judged for my looks, what can I do to ease that anxiety?"],
+        "responses":["Remember that people's judgments are often superficial and don't define your true worth.",
+        "Try to focus on your qualities, talents, and personality rather than just your appearance.","Building self-confidence can help you feel less affected by the judgments of others.",
+        "Work on self-acceptance and self-love. Your appearance is just one aspect of who you are.", "If you're comfortable, you can address your concerns with friends or trusted individuals for support.",
+        "Practice open and honest communication with people you trust. They might offer reassurance.", "Engage in relaxation techniques or mindfulness exercises to manage anxiety in such situations.","Repeat positive affirmations to counter negative self-talk and self-doubt.",
+        "Affirmations like 'I am more than my appearance' can be helpful.",
+        "Focus on your strengths and achievements to boost your self-esteem.", "Spend time with people and in settings that appreciate you for who you are, not just how you look.","In reality, everyone is judged at some point. What matters most is how you feel about yourself."]
+    },
+
+    {
+        "tag":"soc5",
+        "patterns":["Are there subtle ways to steer conversations away from small talk and towards more meaningful topics in social settings?",
+        "Can you provide strategies for engaging in deeper conversations and avoiding superficial chit-chat during gatherings?",
+        "How can I encourage more substantial dialogues and limit small talk in social situations?",
+        "What are effective methods for shifting discussions to more substantial subjects and away from surface-level interactions?",
+        "Can you recommend ways to connect with people on a deeper level and bypass shallow conversations at gatherings?",
+        "How do I create opportunities for more meaningful conversations while minimizing small talk in social settings?",
+        "What are practical tips for engaging in discussions that matter to me and others, rather than superficial topics?",
+        "Are there approaches for encouraging authentic conversations and avoiding casual small talk at gatherings?"],
+        "responses":["To engage in more meaningful conversations, express genuine interest in others and ask open-ended questions. Share your thoughts and experiences, and seek out those who appreciate deeper discussions.",
+        "Connect with people who appreciate meaningful conversations by actively listening, showing empathy, and guiding discussions towards topics that matter to you. Building connections based on shared interests and values can be more fulfilling."]
+    },
+
+    {
+        "tag":"soc6",
+        "patterns":["How can I better cope with my anxiety when I'm expected to attend social gatherings?",
+        "Can you offer strategies for handling my anxiety and feeling more at ease during social events?",
+        "What techniques can I use to manage social anxiety and make gatherings more bearable?",
+        "How do I prepare for social events and manage my anxiety to have a more comfortable experience?",
+        "Can you provide advice on reducing anxiety and stress levels before and during social gatherings?",
+        "What are effective ways to calm my nerves and boost my confidence when attending social events?",
+        "How can I navigate social gatherings with less anxiety and discomfort?",
+        "Can you recommend tools or methods to control my anxiety in social situations?",
+        "What are some practical approaches to handle social anxiety and build more confidence in gatherings?",
+        "How do I manage my anxiety and feel more relaxed during social events or parties?"],
+        "responses":["To manage anxiety in social gatherings, try breathing exercises, mindfulness, and positive self-talk. Arrive early to get comfortable in the setting, focus on listening, and remember that it's okay to take breaks when needed.",
+        "Managing social anxiety begins with self-care. Prior to gatherings, practice relaxation techniques, and during the event, take breaks as necessary. Listening more and worrying less about talking can also help."]
+
+    },
+
+    {
+        "tag":"soc7",
+        "patterns":["How can I politely and discreetly leave a social gathering when I feel overwhelmed?",
+        "What are some effective ways to gracefully exit a conversation or event that's causing anxiety?",
+        "Can you suggest strategies for making a smooth exit from a social situation without drawing attention?",
+        "How do I discreetly remove myself from a social gathering when I start feeling uncomfortable?",
+        "What techniques can I use to exit a social event without making others feel awkward?",
+        "Are there graceful methods for leaving a party or conversation without causing discomfort?",
+        "What are some tips for extricating myself from a social setting when it becomes too much to handle?",
+        "How can I discreetly exit social events to manage my social anxiety?",
+        "Can you provide advice on making a quiet exit from gatherings when I'm feeling overwhelmed?"],
+        "responses":["If you feel overwhelmed in a social situation, remember that it's okay to step away gracefully. Politely excuse yourself, express appreciation for the interaction, and offer a brief reason if you're comfortable doing so.",
+        "A simple and polite exit strategy can be as easy as saying, 'I need a moment to recharge, but it's been great talking with you.' Most people will understand and respect your need for space."]
+    },
+
+    {
+        "tag":"soc8",
+        "patterns":["How can I meet and connect with people who understand my social anxiety and share similar interests?",
+        "Can you suggest ways to find like-minded individuals who are empathetic to my social anxiety?",
+        "What are effective methods for connecting with people who appreciate and relate to my social challenges?"],
+        "responses":["To find like-minded individuals who understand your social anxiety, consider joining support groups, online communities, or attending events related to your interests. These spaces often attract people who can relate to your experiences.",
+        "Finding like-minded people who understand your social anxiety is possible by engaging in activities aligned with your passions. Seek out clubs, organizations, or social networks that share your interests, and you're likely to meet understanding individuals there."]
+    },
+
+    {
+        "tag":"soc9",
+        "patterns":["How can I calm my nerves and reduce anxiety before a public speaking event?",
+        "What techniques do you recommend to control my anxiety levels when speaking in front of an audience?",
+        "Are there specific strategies for overcoming pre-speech jitters?",
+        "How can I alleviate the fear that I experience before public speaking?",
+        "What are some ways to stay composed and confident before going on stage?",
+        "Do you have advice for managing my anxiety and keeping it in check while speaking publicly?",
+        "What mindfulness practices can help me stay calm and focused before a presentation?",
+        "Are there relaxation exercises or techniques I can use to ease my anxiety about public speaking?",
+        "Can you suggest methods to help me maintain my composure and confidence?",
+        "How do I control my nerves so they don't overwhelm me during a speech?"
+        ],
+        "responses":["One effective method to manage pre-speech anxiety is deep breathing. Take slow, deep breaths to calm your nerves before going on stage.",
+        "Practice your speech multiple times. The more prepared you are, the more confident you'll feel.",
+        "Visualize a successful speech in your mind. This positive imagery can help reduce anxiety.",
+        "Consider enrolling in a public speaking class or workshop to gain confidence and skills in a supportive environment.",
+        "Remember that nervousness is normal. Even experienced speakers feel butterflies. Embrace it as part of the process."]
+    },
+
+    {
+        "tag":"soc10",
+        "patterns":["What strategies can I employ to ensure I don't forget my speech while on stage?",
+        "How can I prevent my mind from going blank when I'm in the middle of a presentation?",
+        "What methods can help me remember my speech content and key points?",
+        "Are there techniques for avoiding memory lapses during a public speaking engagement?",
+        "How can I build confidence in my ability to remember my speech material?",
+        "Do you have any advice for staying on track and not losing my train of thought during a speech?",
+        "What are some practices for reducing the risk of forgetting what I'm supposed to say?",
+        "Can you recommend memory-boosting techniques to use while public speaking?",
+        "How do I handle the fear of drawing a mental blank when addressing an audience?",
+        "What can I do to make sure I remember the content of my speech?"],
+        "responses":["Create concise bullet points or an outline as a safety net. Glance at it if you feel like you're forgetting your speech.",
+        "Engage the audience with interactive elements, like asking questions. It keeps your mind active and can help prevent memory lapses.",
+        "Practice in a setting similar to the one where you'll be speaking. Familiarity can boost your memory and confidence.",
+        "Don't focus on perfection. Audiences are forgiving, and a small stumble is rarely noticed.",
+        "If you do forget something, it's okay to pause, take a breath, and continue. The audience won't mind a momentary pause."]
+    },
+
+    {
+        "tag":"soc11",
+        "patterns":["What techniques can help me maintain consistent eye contact with the audience during a presentation?",
+        "How can I make eye contact without feeling overwhelmed by the audience's gaze?",
+        "Are there methods for balancing eye contact with different parts of the audience?",
+        "What strategies can I use to appear confident while looking at the audience during my speech?",
+        "Can you provide tips for avoiding the discomfort of sustained eye contact during public speaking?",
+        "How do I manage my anxiety related to making eye contact with the audience?",
+        "What practices can I adopt to ensure my eye contact comes across as genuine and not forced?",
+        "What's the best way to use eye contact effectively during a speech?",
+        "How do I engage with the audience through eye contact without feeling self-conscious?",
+        "What are the dos and don'ts of maintaining eye contact while speaking in public?"],
+        "responses":["Start by making eye contact with a friendly face in the audience, such as a supportive friend or colleague.",
+        "Scan the room, looking at different sections rather than focusing on specific individuals.",
+        "Practice in front of a mirror or record yourself speaking to get comfortable with your eye contact and body language.",
+        "Avoid staring at a single point or looking over the audience's heads. Instead, focus on individuals for a few seconds at a time."
+    ]
+    },
+
+    {
+        "tag":"soc12",
+        "patterns":["How can I boost my confidence and self-esteem when speaking in front of a group?",
+        "What strategies can help me feel more self-assured and capable during public speaking?",
+        "Are there techniques to overcome self-doubt and build confidence before a speech?",
+        "How can I enhance my self-esteem and self-belief in my public speaking abilities?",
+        "Can you provide advice for increasing my confidence in my own speaking skills?",
+        "Do you have recommendations for improving my self-assurance and self-worth while presenting?",
+        "What practices can help me feel more confident and positive about my public speaking engagements?",
+        "What should I do to combat negative self-talk and build a stronger sense of self-confidence in public speaking?",
+        "How can I work on believing in myself and my abilities as a speaker?",
+        "Can you suggest specific exercises or affirmations to boost my confidence and self-esteem before a speech?"],
+        "responses":["Affirmations can be helpful. Before your speech, repeat positive statements to yourself, such as 'I am a capable and confident speaker.",
+        "Build confidence by gaining experience. Start with smaller audiences or practice in front of a mirror.",
+        "Seek feedback from trusted friends or mentors to identify areas of strength and improvement in your speaking.",
+        "Set achievable goals for each speech. Gradual improvement can lead to increased confidence.",
+        "Remember, it's okay to be imperfect. Nobody is flawless, and making mistakes is a part of the learning process."]
+    },
+
+    {
+        "tag":"soc13",
+        "patterns":["What can I do to manage physical symptoms of anxiety like trembling or sweating during a speech?",
+        "Are there techniques to alleviate the physical signs of nervousness while speaking publicly?",
+        "How can I reduce the physical effects of anxiety, such as shaky hands and a racing heart, during a presentation?",
+        "What strategies can help me appear calm and collected when my body is reacting to anxiety?",
+        "Can you provide advice for managing physical manifestations of anxiety when public speaking?",
+        "Do you have recommendations for staying physically composed despite feeling anxious?",
+        "What practices can help me control physical symptoms of anxiety, like a shaky voice, during a speech?",
+        "How can I present myself confidently even when my body is exhibiting signs of nervousness?"],
+        "responses":["Regular physical exercise can help reduce the physical symptoms of anxiety. Consider incorporating it into your routine.",
+        "Practice relaxation techniques like progressive muscle relaxation to ease physical tension before speaking.",
+        "Stay hydrated and avoid caffeine before your speech to minimize physical symptoms like trembling hands.",
+        "Maintain a balanced diet and get enough rest, as overall health can affect your physical reactions to anxiety.",
+        "Learn grounding exercises to stay present in the moment. Techniques like counting or deep breathing can help."]
+    },
+
+    {
+        "tag":"soc14",
+        "patterns":["How can I calm my nerves and reduce anxiety in high-pressure situations?",
+        "What techniques do you recommend to control my anxiety levels when facing challenging circumstances?",
+        "Are there specific strategies for overcoming pre-event jitters?",
+        "How can I alleviate the fear that I experience before a challenging task or event?",
+        "What are some ways to stay composed and confident when dealing with stressful situations?",
+        "Do you have advice for managing my anxiety and keeping it in check in demanding situations?",
+        "What mindfulness practices can help me stay calm and focused before a significant event?",
+        "Are there relaxation exercises or techniques I can use to ease my anxiety in high-stress situations?",
+        "Can you suggest methods to help me maintain my composure and confidence in challenging scenarios?"],
+        "responses":["Practice deep breathing exercises to help calm your nerves before a challenging situation. Inhale deeply for a count of four, hold for four, and exhale for a count of four.",
+        "Visualize a positive outcome or a time when you handled a similar situation well. This can boost your confidence and reduce anxiety.",
+        "Break down the event into smaller, manageable tasks. Focus on each step rather than the entire situation, which can make it feel less overwhelming.",
+        "Consider desensitization techniques, gradually exposing yourself to the situation that triggers anxiety. Over time, this can help reduce your anxiety.",
+        "Learn relaxation techniques like progressive muscle relaxation or meditation. These practices can help you stay calm and centered."]
+    },
+
+    {
+        "tag":"soc15",
+        "patterns":["What strategies can I employ to ensure I don't forget important information during important tasks or events?",
+        "How can I prevent my mind from going blank when I'm dealing with important situations?",
+        "Are there techniques for better memory recall and retention in critical moments?",
+        "How can I build confidence in my ability to remember essential details during significant events?",
+        "Can you provide advice for staying on track and not losing focus when faced with important tasks?",
+        "What are some practices for reducing the risk of forgetting vital information in crucial situations?",
+        "What can I do to make sure I remember important facts and details during significant events?",
+        "Can you recommend memory-boosting techniques for use in high-pressure scenarios?",
+        "How do I handle the fear of drawing a mental blank when dealing with crucial situations?"],
+        "responses":["Use note cards or an outline to keep track of important points. Even if you forget, you can quickly refer to your notes to get back on track.",
+        "Practice your speech or presentation multiple times to build familiarity with the content. The more you rehearse, the less likely you are to forget.",
+        "Break your content into chunks and create mnemonic devices or associations to help remember key points.",
+        "Embrace spontaneity and adaptability. If you forget something, don't dwell on it; simply continue with your presentation as smoothly as possible.",
+        "Engage with your audience by asking questions or encouraging participation. This can ease your anxiety about forgetting because it becomes more of a conversation."]
+    },
+
+    {
+        "tag":"soc16",
+        "patterns":["What techniques can help me maintain consistent eye contact and build connections in various situations?",
+        "How can I make eye contact without feeling overwhelmed in social or professional interactions?",
+        "Are there methods for balancing eye contact with different people during conversations?",
+        "What strategies can I use to appear confident and attentive when maintaining eye contact in interactions?",
+        "Can you provide tips for avoiding discomfort and awkwardness while making eye contact in various contexts?",
+        "How do I manage my anxiety related to making eye contact in different situations?",
+        "What practices can I adopt to ensure my eye contact comes across as genuine and not forced?",
+        "What's the best way to use eye contact effectively in social or professional conversations?",
+        "How do I engage with others through eye contact without feeling self-conscious?",
+        "What are the dos and don'ts of maintaining eye contact during interactions?"],
+        "responses":["Begin by making eye contact with friendly faces in the audience or people you know. Gradually expand your gaze to include others as you become more comfortable.",
+        "Focus on the idea that eye contact helps convey confidence and build connections, rather than thinking of it as a source of anxiety.",
+        "Practice maintaining eye contact in everyday conversations with friends and family to build your confidence.",
+        "Use the 'triangle technique' by looking at people's foreheads or the space between their eyebrows if making direct eye contact is too intimidating.",
+        "Remind yourself that most people in the audience are not scrutinizing your every move. They're more interested in your message than your eye contact."]
+    },
+
+    {
+        "tag":"soc17",
+        "patterns":["How should I respond if I encounter interruptions or unexpected questions during conversations or important discussions?",
+        "What strategies can help me stay composed when someone interrupts me in a conversation or during a presentation?",
+        "Are there methods for gracefully addressing unexpected questions and interactions in various situations?",
+        "What's the best way to handle disruptions and maintain the flow of a discussion in important contexts?",
+        "How can I prepare for and respond to unanticipated questions and interactions in conversations and presentations?",
+        "Do you have advice for staying on track when faced with unexpected challenges during discussions?",
+        "What should I do if someone asks a question I don't know the answer to during important interactions or presentations?",
+        "How can I maintain my confidence when handling interruptions and off-topic questions during discussions?",
+        "What are the key principles of managing unexpected interactions and questions effectively?",
+        "Can you recommend techniques to regain control and redirect the focus when faced with unexpected situations during discussions and presentations?"],
+        "responses":["Stay composed by taking a deep breath and using a brief pause to regain control if interrupted. Then, address the interruption politely but assertively.",
+        "Prepare for potential interruptions or questions in advance, so you feel more confident in managing them.",
+        "Don't be afraid to politely redirect the conversation back to your main point if an interruption or question veers off-topic.",
+        "Embrace the idea that no one expects you to have all the answers. It's okay to admit if you don't know something and offer to follow up later.",
+        "Engage with your audience by asking open-ended questions or encouraging them to share their thoughts, which can reduce the likelihood of interruptions."]
+    },
+
+    {
+        "tag":"soc18",
+        "patterns":["How can I boost my confidence and self-esteem in various aspects of my life?",
+        "What strategies can help me feel more self-assured and capable when dealing with different challenges?",
+        "Are there techniques to overcome self-doubt and build confidence in diverse areas of my life?",
+        "How can I enhance my self-esteem and self-belief in my abilities?",
+        "Can you provide advice for increasing my confidence in my own skills and potential?",
+        "Do you have recommendations for improving my self-assurance and self-worth in different areas of my life?",
+        "What practices can help me feel more confident and positive about my abilities and potential?",
+        "What should I do to combat negative self-talk and build a stronger sense of self-confidence in various situations?",
+        "How can I work on believing in myself and my abilities?",
+        "Can you suggest specific exercises or affirmations to boost my confidence and self-esteem in different aspects of my life?"],
+        "responses":["Keep a 'success journal' where you document your achievements and positive feedback you receive. Reviewing this can boost your self-esteem.",
+        "Challenge negative self-talk by replacing it with positive, self-affirming statements. Remind yourself of your strengths and past successes.",
+        "Set achievable goals for yourself and celebrate your progress, no matter how small. Each step you take builds your confidence.",
+        "Surround yourself with supportive, encouraging people who believe in your abilities and can provide reassurance.",
+        "Consider seeking the help of a therapist or counselor who specializes in cognitive-behavioral therapy (CBT) to address and challenge negative thought patterns."]
+    },
+
+    {
+        "tag":"soc19",
+        "patterns":["How do I cope with overwhelming anxiety or panic attacks in different situations?",
+        "What should I do if I feel overwhelmed by anxiety in various circumstances?",
+        "Are there strategies for managing and reducing panic attacks in diverse settings?",
+        "What practices can help me regain control and composure if I start to panic in various scenarios?",
+        "Can you provide advice for staying focused and calm when anxiety becomes overwhelming in different contexts?",
+        "Do you have recommendations for handling panic attacks in real-time in various situations?",
+        "What's the best way to recover from a panic attack or intense anxiety in different settings?",
+        "How can I prepare for and respond to anxiety-induced panic in various situations?",
+        "What are some grounding techniques to regain composure during panic attacks or intense anxiety in different contexts?",
+        "Can you suggest ways to cope with anxiety or panic attacks in various scenarios?"],
+        "responses":["Practice grounding exercises like the 5-4-3-2-1 method to anchor yourself in the present and reduce panic symptoms.",
+        "Incorporate slow, deep breathing techniques to regulate your breath and calm your nervous system during a panic attack.",
+        "Consider professional help, such as therapy or counseling, to learn effective strategies for managing and reducing panic attacks.",
+        "Have a 'panic plan' in place, including a safe space to retreat to if needed and a trusted person to call for support.",
+        "Be kind and patient with yourself. Understand that panic attacks can happen to anyone, and they do not define your abilities or character."]
+    },
+
+    {
+        "tag":"soc20",
+        "patterns":["How can I manage the fear of making mistakes or errors in different situations?",
+        "What strategies can help me feel more comfortable with the possibility of making mistakes in various areas of my life?",
+        "Are there techniques to maintain composure and confidence if I make a mistake in various settings?",
+        "What's the best way to deal with mistakes or hiccups in diverse situations?",
+        "Can you provide advice for reducing the fear of messing up or making errors in different areas of my life?"],
+        "responses":["Shift your mindset to see mistakes as opportunities for growth and learning rather than as failures.",
+        "Remember that everyone makes mistakes, including the most accomplished individuals. It's a part of the human experience.",
+        "Prepare thoroughly for tasks or events to minimize the likelihood of errors, but also acknowledge that some mistakes are inevitable and forgivable.",
+        "Consider the 10-10-10 rule: Will this mistake matter in 10 minutes, 10 days, or 10 years? Most won't have long-lasting consequences.",
+        "Build resilience by focusing on your ability to bounce back from setbacks. The more you embrace resilience, the less you'll fear making mistakes."]
+    },
+
+    {
+        "tag":"dep1",
+        "patterns":["Why do I feel this way, and how can I make it stop?",
+
+        "What's causing this persistent low mood, and how can I find relief from it?",
+        "Why am I constantly feeling down, and is there anything I can do to improve it?",
+        "What are the root causes of my ongoing low mood, and how can I break free from it?",
+        "How can I understand the reasons behind my continuous low spirits and work towards change?",
+        "What is the source of my never-ending sadness, and how can I find a way out of it?",
+        "Why am I stuck in this ongoing state of low mood, and what steps can I take to feel better?",
+        "Is there an underlying cause for my persistent depression, and what can I do to alleviate it?",
+        "What factors are contributing to my prolonged low mood, and how can I turn things around?",
+        "How can I identify the triggers for my persistent sadness and make it subside?",
+        "Why is this never-ending low mood taking over, and what strategies are there to change it?"],
+        "responses":["Low mood can result from a combination of factors, including genetics, life events, and chemical imbalances in the brain. To make it better, it's crucial to reach out for professional help and explore therapies like cognitive-behavioral therapy (CBT) or medication.",
+        "Feeling this way can be overwhelming, but it's essential to remember that you're not alone. Seek support from a mental health professional who can help you understand the underlying causes and develop a tailored treatment plan.",
+        "Low mood often has multifaceted origins, and overcoming it may require time and effort. Engaging in self-care practices like regular exercise, maintaining a balanced diet, and getting adequate sleep can contribute to gradual improvement.",
+        "Understanding why you feel this way is a significant step. Seek therapy or counseling to explore the roots of your depression and develop strategies for managing it effectively.",
+        "The path to recovery involves identifying and addressing the factors contributing to your low mood. Professional guidance, support from loved ones, and self-compassion are all crucial components of healing."]
+    },
+
+    {
+        "tag":"dep2",
+        "patterns":["Is there a specific cause or trigger for my depression?",
+
+        "What might have caused my depression, and is there a particular trigger I should be aware of?",
+        "Is there a root cause behind my persistent low mood that I should investigate?",
+        "Can I pinpoint any specific events or circumstances that triggered my depression?",
+        "Have I identified the factors or situations that led to my ongoing state of depression?",
+        "Is there a known catalyst for my continuous low mood that I should address?",
+        "Can I trace my depression back to a specific source or event in my life?",
+        "What are the potential causes or triggers of my depressive state?",
+        "Is there a particular event or situation that I believe initiated my depression?",
+        "Have I considered the specific factors that may have contributed to my depression?",
+        "Is there a connection between certain experiences and my ongoing depression?"],
+        "responses":["Depression can be triggered by a variety of factors, such as trauma, life changes, chronic stress, or a family history of mental health issues. Identifying your unique triggers can help in developing a personalized treatment plan.",
+        "Determining the specific cause of your depression may not always be straightforward. It often results from a combination of genetic, environmental, and psychological factors. A mental health professional can assist you in understanding these factors.",
+        "While identifying a singular cause can be challenging, it's more common for depression to be influenced by multiple factors. An expert can help you explore your personal triggers and develop coping strategies.",
+        "Understanding the origins of your depression is a complex process, often requiring the support of a mental health specialist. They can help you navigate the complexities of your emotional landscape.",
+        "In many cases, depression doesn't have a single, clear cause but is a result of a combination of genetic and environmental factors. A mental health provider can help you uncover the contributing elements and work on managing them."]
+    },
+
+    {
+        "tag":"dep3",
+        "patterns":[ "What are the long-term effects of persistent low mood on my mental and physical health?",
+
+        "How might my prolonged low mood affect my mental and physical well-being in the long run?",
+        "What are the potential consequences of my ongoing depression on my overall health?",
+        "Am I at risk for lasting mental and physical health issues due to my persistent low mood?",
+        "How could my continuous low mood impact my health over an extended period?",
+        "What are the implications of my long-term depression for my mental and physical wellness?",
+        "Is there a risk of enduring health complications resulting from my persistent low mood?",
+        "What long-term health concerns should I be aware of due to my depression?",
+        "Are there specific effects on my mental and physical health that might develop over time?",
+        "How does my ongoing low mood influence my long-term well-being?",
+        "Can I anticipate any long-term consequences for my mental and physical health because of my depression?"],
+        "responses":["Long-term depression can have various effects, including increased risk of other mental health conditions, physical health problems, and a reduced quality of life. Seeking treatment early is crucial to mitigate these potential consequences.",
+        "Prolonged low mood can lead to issues like chronic fatigue, weakened immune function, and difficulty in maintaining relationships. Seeking professional help can help prevent or alleviate these long-term effects.",
+        "The persistent nature of depression can increase the risk of long-term health concerns, such as cardiovascular problems, obesity, and chronic pain. Addressing your depression through therapy and medication can help reduce these risks.",
+        "Living with ongoing depression may result in cognitive impairments, hindered daily functioning, and strained relationships. It's important to consult a mental health expert to address these challenges.",
+        "The long-term effects of depression can be far-reaching, affecting both mental and physical health. To prevent or minimize these consequences, it's crucial to seek treatment, develop coping strategies, and focus on self-care."]
+    },
+
+    {
+        "tag":"dep4",
+        "patterns":["How can I explain my feelings to others and help them understand what I'm going through?",
+
+        "What's the best way to articulate my feelings to others and make them comprehend my situation?",
+        "How can I effectively convey my emotions to friends and family, helping them understand my experience?",
+        "Is there a way to express my feelings to those close to me and provide insight into my condition?",
+        "What strategies can I use to describe my emotions to others and help them empathize with my situation?",
+        "How do I go about sharing my feelings with loved ones and fostering their understanding?",
+        "Are there communication techniques to help others grasp the depth of my emotions and struggles?",
+        "What methods can I use to discuss my feelings and help others relate to my experiences?"],
+        "responses":["Open and honest communication is key. Sharing your feelings with loved ones and using 'I' statements can help convey your experience and foster understanding.",
+        "Providing educational resources or articles on depression can be an effective way to help loved ones understand your condition. Encourage open dialogue and be patient as they learn.",
+        "Consider involving a mental health professional in discussions with loved ones. They can facilitate conversations and provide insights that promote understanding.",
+        "Articulate your feelings by describing your symptoms, their impact on your daily life, and what support you need. Encourage an ongoing dialogue with your loved ones about your experiences.",
+        "Empathetic storytelling can help loved ones grasp your emotions. Share your journey, including your challenges, progress, and coping strategies, to help them understand your perspective."]
+    },
+
+    {
+        "tag":"dep5",
+        "patterns":["What are the available treatment options for depression, and how effective are they?",
+        "Can you provide information about the various therapies or treatments for depression and their success rates?",
+        "Are there specific therapies or treatments that have shown promising results in managing depression?",
+        "What options do I have in terms of therapeutic approaches for depression, and what's their track record?",
+        "Which treatments or therapies are commonly recommended for depression, and are they proven to be effective?",
+        "Can you give an overview of the different treatment methods for depression, along with their effectiveness?",
+        "How can I explore treatment choices for depression, and are there any that stand out in terms of effectiveness?",
+        "Are there well-established therapies or treatments for depression that I should consider?"],
+        "responses":["Numerous effective treatments exist for depression, including psychotherapy, medication, and lifestyle changes. The choice of treatment may vary from person to person, but evidence suggests that a combination of therapy and medication often yields positive results.",
+        "Psychotherapies like cognitive-behavioral therapy (CBT) and medication options like antidepressants are widely recognized treatments for depression. The effectiveness of these treatments is supported by extensive research.",
+        "Both psychotherapy and medication have demonstrated effectiveness in treating depression. It's important to work with a mental health professional to determine the most suitable treatment plan for your specific situation.",
+        "Multiple treatments and therapies have been developed to address depression, and their success rates can be substantial. However, the effectiveness of a treatment may vary from person to person, highlighting the importance of personalized care.",
+        "There are numerous therapeutic options for depression, and their effectiveness is well-established. The key is to find the right combination that works best for you. Collaborate with a mental health provider to create a tailored treatment plan."]
+    },
+
+    {
+        "tag":"dep6",
+        "patterns":["Can changes in my lifestyle, such as diet, exercise, or sleep, help alleviate my symptoms?",
+
+        "Are there specific lifestyle adjustments, like diet, exercise, or sleep patterns, that might help improve my symptoms of depression?",
+        "How can changes in my daily routine, including diet, physical activity, or sleep, contribute to alleviating my depression?",
+        "Is there evidence to suggest that lifestyle modifications, such as diet and exercise, can positively impact depression?",
+        "Can I incorporate changes in my lifestyle, such as diet and exercise, to address my symptoms of depression?",
+        "What role does lifestyle play in managing depression, and what changes can I make to potentially find relief?",
+        "Are there guidelines or recommendations for adapting my lifestyle to support my mental well-being and alleviate depression?",
+        "How can I evaluate the impact of my daily habits, like diet, exercise, or sleep, on my depression?",
+        "What lifestyle strategies can I explore to complement other depression treatments and improve my well-being?",
+        "What are the connections between lifestyle choices and the management of depression, and how can I apply this knowledge?",
+        "Is there an approach to lifestyle changes that can serve as a helpful addition to traditional treatments for depression?"],
+        "responses":["Lifestyle changes can play a significant role in managing depression. Regular exercise, a balanced diet, and consistent sleep patterns can contribute to improved mood and overall well-being. It's essential to incorporate these changes gradually and consult with a healthcare professional to create a sustainable plan.",
+        "Positive lifestyle adjustments, such as maintaining a nutritious diet, engaging in regular physical activity, and prioritizing quality sleep, can complement other depression treatments. These changes can promote better mental health and help alleviate symptoms over time.",
+        "Lifestyle modifications can be beneficial in managing depression. Incorporating exercise, a healthy diet, and establishing a regular sleep routine can positively impact your mood. Consult with a mental health expert for guidance on implementing these changes effectively.",
+        "Optimizing your lifestyle by focusing on exercise, nutrition, and sleep can be a valuable addition to your depression treatment plan. It's important to work with a healthcare provider to create a tailored strategy that aligns with your goals and preferences."]
+    },
+
+    {
+        "tag":"dep7",
+        "patterns":["Is it common to have fluctuations in the intensity of depression, or should it remain relatively consistent?",
+        "What is considered typical in terms of the fluctuation of depression symptoms, and when should I be concerned?",
+        "Are there expected variations in the intensity of depression, or is it unusual for symptoms to change?",
+        "Can you explain the natural course of depression, including whether fluctuations in intensity are standard?",
+        "How should I interpret changes in the intensity of my depression symptoms over time?",
+        "What might cause fluctuations in the severity of depression, and when should I seek professional help?",
+        "Is it usual for depression to ebb and flow in terms of intensity, or should I be concerned about these changes?",
+        "Are there factors that might influence variations in the intensity of depression, and how should I address them?"],
+        "responses":["It's common for depression to have periods of fluctuation in intensity. These changes are normal, but if you experience severe fluctuations, it's essential to consult a mental health professional to ensure your treatment plan is effective.",
+        "Fluctuations in the intensity of depression are typical, and they may occur in response to various factors. However, if these fluctuations significantly impact your daily life, it's important to discuss this with a healthcare provider.",
+        "Depression often fluctuates in intensity, and it's perfectly normal to have better and worse days. Nonetheless, if you notice extreme and persistent fluctuations, it's advisable to seek professional guidance.",
+        "Fluctuations in the intensity of depression can be part of the condition. However, if these variations are causing distress or disruption, consulting with a mental health expert is recommended to explore adjustments in your treatment plan.",
+        "Experiencing changes in the intensity of depression is a typical aspect of the condition. While fluctuations are normal, it's important to maintain ongoing communication with your mental health provider to ensure your treatment remains effective."]
+    },
+
+    {
+        "tag":"dep8",
+        "patterns":["How can I reignite my motivation and enthusiasm for activities I once enjoyed?",
+        "Are there strategies to help me rediscover my interest and motivation for the things I used to love?",
+        "What steps can I take to rekindle my passion for hobbies and activities I've lost interest in?",
+        "Is there a process I can follow to regain my lost motivation and enthusiasm for life?",
+        "How do I go about recapturing my interest in things I used to find enjoyable and fulfilling?",
+        "What techniques can I employ to reintroduce excitement and motivation into my life?",
+        "Can you provide guidance on ways to revive my interest in activities I've lost enthusiasm for due to depression?",
+        "What are some actionable steps I can take to reawaken my motivation and zest for life?",
+        "Are there practical methods to help me rediscover my passion for the things I once cherished?",
+        "How can I initiate a process of rediscovery and regain motivation for activities I've neglected due to depression?"],
+        "responses":["Rekindling your motivation and interest in past enjoyments involves gradual steps. Start by setting small, achievable goals, seeking professional help, and engaging in self-care practices. It may take time, but your interests can be revived.",
+        "Reconnecting with activities you once enjoyed can be a meaningful part of your recovery. Begin by identifying your interests, taking small steps, and gradually increasing your engagement. A mental health professional can guide you through this process.",
+        "Rediscovering your motivation and interests often begins with self-compassion and small steps. It's beneficial to seek guidance from a mental health provider, who can assist you in rebuilding a sense of enjoyment in life.",
+        "Reviving your motivation and interests may require patience and self-compassion. Engage in self-care practices, explore activities you once loved, and consider professional help for tailored strategies to reignite your passion for life.",
+        "Regaining motivation and interest in activities you used to enjoy is possible. Start by acknowledging your feelings, taking small steps, and seeking professional guidance to overcome barriers that may be holding you back."]
+    },
+
+    {
+        "tag":"dep9",
+        "patterns":["How can I deal with the negative thoughts and self-criticism that often accompany depression?",
+
+        "What strategies can I use to counteract negative thoughts and self-criticism that come with depression?",
+        "How can I address the self-critical and negative thought patterns that are typical of depression?",
+        "Are there effective techniques for managing and changing the negative self-talk associated with depression?",
+        "Can you provide guidance on dealing with the harsh self-criticism and pessimistic thoughts that arise with depression?",
+        "What are the recommended approaches to challenge and overcome negative thought patterns in depression?",
+        "How do I combat the negative thinking and self-criticism that exacerbate my depression?"],
+        "responses":["Addressing negative thoughts and self-criticism is crucial in managing depression. Cognitive-behavioral therapy (CBT) is an evidence-based approach that can help you identify and challenge these thought patterns. Seeking therapy with a trained CBT therapist can be particularly effective.",
+        "Coping with negative thoughts and self-criticism is a central aspect of depression treatment. Techniques like mindfulness, journaling, and cognitive restructuring can be beneficial in reframing negative thought patterns.",
+        "Managing negative thoughts and self-criticism is a significant part of your journey. Working with a mental health professional who specializes in cognitive-behavioral therapy (CBT) can provide you with effective strategies to challenge and change these thought patterns.",
+        "Addressing negative thought patterns involves self-awareness and practice. Consider mindfulness meditation, affirmations, and professional therapy to develop skills in managing these thoughts and promoting self-compassion."]
+    },
+
+    {
+        "tag":"dep10",
+        "patterns":["What support groups or resources exist for individuals with depression, and how can I access them?",
+        "Where can I find support networks or resources to connect with others who understand what I'm going through?",
+        "Are there specific communities or organizations that cater to individuals dealing with depression?",
+        "How can I discover support groups or resources that provide a sense of connection and understanding for people with depression?",
+        "What are some recommended support groups or online communities for individuals experiencing depression?",
+        "Can you recommend organizations or platforms where I can find people who share similar experiences with depression?",
+        "Where can I access resources that offer guidance, connections, and support for those coping with depression?"],
+        "responses":["There are numerous support groups and resources for individuals dealing with depression. These can provide a sense of community, understanding, and shared experiences. Local mental health organizations, online forums, and social media groups are good places to start your search.",
+        "Support groups and resources offer valuable connections with others who share similar experiences. You can explore online platforms, local mental health organizations, and community centers to find these supportive networks.",
+        "Connecting with support groups or resources is a helpful way to gain insights and encouragement from individuals who understand your struggles. Look for local or virtual groups, mental health organizations, and websites specializing in depression support."]
+    },
+
+    {
+        "tag":"dep11",
+        "patterns":["How does emotional distress or stress impact a person's ability to sleep well?",
+        "Are there common factors that contribute to both sleep problems and emotional difficulties?",
+        "What are the underlying reasons for sleep disturbances in people experiencing emotional turmoil?",
+        "Can you explain the relationship between emotional well-being and the quality of sleep one gets?",
+        "What are the physiological and psychological aspects that connect emotional states with sleep issues?"],
+        "responses":["Sleep and emotions are closely intertwined because emotional stress can lead to racing thoughts and heightened anxiety, making it difficult to fall asleep.",
+        "The connection between emotional well-being and sleep is bidirectional, as poor sleep can worsen emotional health, creating a cycle of distress.",
+        "Emotions, particularly negative ones like anxiety and sadness, activate the body's stress response, which can interfere with relaxation and sleep.",
+        "Depression, anxiety, and other emotional disorders can disrupt the body's natural sleep-wake cycle, resulting in sleep disturbances.",
+        "Anxiety and emotional turmoil can cause hyperarousal, making it challenging to relax and unwind before bedtime, thus affecting sleep."]
+    },
+
+    {
+        "tag":"dep12",
+        "patterns":["What strategies can individuals use to manage sleep problems alongside emotional challenges?",
+        "How can people develop healthier sleep habits to better handle emotional distress?",
+        "Are there mindfulness or relaxation techniques that can help with both sleep and emotional well-being?",
+        "In what ways can individuals work on improving their emotional health and, in turn, their sleep quality?",
+        "What role does self-care play in addressing both sleep and emotional issues effectively?"],
+        "responses":["Individuals can develop a bedtime routine that includes relaxation techniques, such as deep breathing or meditation, to manage both sleep and emotional well-being.",
+        "Balancing emotional health may involve seeking professional help, such as counseling or therapy, which can also address sleep issues.",
+        "Practicing self-compassion and self-care is crucial for individuals dealing with sleep and emotional difficulties. It's important to prioritize well-being.",
+        "Mindfulness exercises can be effective in promoting emotional balance and improving sleep quality.",
+        "Journaling about emotions and concerns before bedtime can help offload worries, potentially making it easier to sleep."]
+    },
+
+    {
+        "tag":"dep13",
+        "patterns":["How do lifestyle choices and habits affect the sleep patterns and emotional well-being of individuals?",
+        "Can modifications in daily routines and behaviors contribute to better sleep and emotional health?",
+        "What role does diet, exercise, and other lifestyle factors play in the connection between sleep and emotions?",
+        "Are there specific lifestyle changes that are known to have a positive impact on sleep and emotional balance?",
+        "How can individuals create a lifestyle that promotes sound sleep and emotional resilience?"],
+        "responses":["Lifestyle changes like regular exercise and a balanced diet can help regulate mood and improve sleep quality.",
+        "Reducing the consumption of caffeine and alcohol, especially close to bedtime, can positively influence both sleep and emotional well-being.",
+        "Establishing a consistent sleep schedule and creating a calming bedtime environment can aid in improving sleep and emotional stability.",
+        "Engaging in stress-reduction activities like yoga or meditation can create a buffer against the impact of emotional stress on sleep.",
+        "Social connections and maintaining a supportive network can contribute to both better sleep and emotional health."]
+    },
+
+    {
+        "tag":"dep14",
+        "patterns":["When should individuals consider seeking professional assistance for sleep problems and emotional difficulties?",
+        "What types of healthcare providers or specialists can help with both sleep and emotional concerns?",
+        "Are there therapies or treatment options available for those dealing with sleep issues and emotional distress?",
+        "What should someone expect when consulting a healthcare professional for sleep and emotional problems?",
+        "Are there support groups or community resources that can assist individuals struggling with sleep and emotional well-being?"],
+        "responses":["Individuals should consider consulting a healthcare provider or mental health professional when sleep problems and emotional distress significantly impact their daily lives.",
+        "Psychiatrists, psychologists, and therapists are qualified professionals who can assist with both emotional and sleep-related concerns.",
+        "Cognitive-behavioral therapy (CBT) is an evidence-based approach that can address both sleep disorders and emotional challenges effectively.",
+        "In some cases, medication prescribed by a healthcare provider may be a suitable option to manage sleep and emotional problems.",
+        "Support groups, community resources, and online forums can offer valuable assistance and shared experiences for individuals facing sleep and emotional issues."]
+    },
+
+    {
+        "tag":"dep15",
+        "patterns":["What are some practical steps individuals can take to improve both their sleep and emotional states?",
+        "Are there cognitive or behavioral strategies that can be effective in addressing sleep and emotional issues?",
+        "How can individuals develop a holistic approach to enhancing both their sleep and emotional well-being?",
+        "What are some self-help methods or techniques people can use to manage sleep problems and emotional struggles?",
+        "Can you provide tips on creating a daily routine that fosters better sleep and emotional stability?"],
+        "responses":["Practicing good sleep hygiene, such as keeping a regular sleep schedule and creating a comfortable sleep environment, can foster improved sleep and emotional well-being.",
+        "Developing a daily routine that includes physical activity, time for relaxation, and emotional self-care can be beneficial for overall health.",
+        "Learning to identify and challenge negative thought patterns through cognitive-behavioral techniques can positively impact sleep and emotional states.",
+        "Setting realistic goals for self-improvement and seeking gradual progress can help individuals achieve better sleep and emotional stability.",
+        "Consistent self-monitoring and adjustment of strategies are key to long-term success in managing both sleep and emotional well-being."]
+    },
+
+    {
+        "tag":"dep16",
+        "patterns":["Why have I lost interest in activities and hobbies that used to engage me?",
+        "Is it common to experience a lack of enthusiasm or interest in life in general?",
+        "How can I reignite my motivation and regain interest in things I once found enjoyable?",
+        "What strategies can I employ to overcome a pervasive sense of apathy and emotional numbness?",
+        "What causes the inability to experience pleasure or interest in various aspects of life?"],
+        "responses":["A loss of interest in activities can occur due to various factors, including stress, changes in life circumstances, or emotional exhaustion. It's a common experience and not necessarily permanent.",
+        "Feeling indifferent to things you once enjoyed is a recognizable symptom of many mental health conditions, and it can be treated or managed with the right support.",
+        "To regain motivation and interest, start small. Identify one or two activities you used to enjoy and try engaging in them again. Gradual steps can make a difference.",
+        "The loss of interest can be challenging, but therapy and counseling are valuable options to explore, providing strategies to address this symptom and underlying causes.",
+        "Remember that depression can impact emotions and interests, but it doesn't define your entire life. Seek support and make self-care a priority."]
+    },
+
+    {
+        "tag":"dep17",
+        "patterns":["Is it typical to feel emotionally detached and indifferent during tough times?",
+        "What can I do to reconnect with my emotions and rekindle a sense of enjoyment in life?",
+        "Why does depression often lead to emotional numbness and a lack of interest in daily activities?",
+        "Are there effective ways to address the emotional emptiness and disinterest that come with depression?",
+        "How do I manage the emotional impact of depression and the resulting loss of interest in life?"],
+        "responses":["Experiencing emotional detachment is not uncommon during difficult times, and it's often a protective response to emotional stress or trauma.",
+        "Reconnecting with emotions involves self-awareness, self-compassion, and exploring the root causes of emotional detachment. Therapy can be a helpful tool.",
+        "Depression often leads to emotional numbness and indifference, but it can be treated with various therapeutic approaches, medication, or lifestyle changes.",
+        "Effective ways to address emotional emptiness include mindfulness practices, expressing emotions through art or writing, and seeking connection with supportive individuals.",
+        "Managing the emotional impact of depression involves self-acceptance, patience, and learning to embrace a wide range of emotions, both positive and negative."]
+    },
+
+    {
+        "tag":"dep18",
+        "patterns":["When should I consider seeking help for my emotional numbness and loss of interest?",
+        "What are the signs that it's time to reach out to a mental health professional for support?",
+        "Are there therapies or treatments that can assist in regaining emotional engagement and interest in life?",
+        "How do I discuss my feelings of indifference and emotional numbness with friends and family?",
+        "What resources and support networks are available to help address the loss of interest and emotional numbness caused by depression?"],
+        "responses":["Consider seeking help if your loss of interest and emotional numbness persist over time or significantly interfere with your daily life, relationships, and well-being.",
+        "Signs that it's time to reach out to a mental health professional include feeling overwhelmed, experiencing persistent sadness, or struggling with daily functioning.",
+        "Therapies like cognitive-behavioral therapy (CBT), interpersonal therapy (IPT), or medication may help address emotional numbness and loss of interest. A mental health professional can guide you in the right direction."]
+    },
+
+    {
+        "tag":"dep19",
+        "patterns":["What are effective coping strategies for managing a diminished sense of interest and emotional numbness?",
+        "How can I adapt to daily life when experiencing a persistent loss of enthusiasm and emotional detachment?",
+        "Are there self-help techniques or practices that can help me cope with the emotional effects of depression?",
+        "What lifestyle changes or habits can I adopt to combat the loss of interest and emotional numbness?",
+        "How can I build resilience and emotional strength to counteract the impact of depression on my interests and emotions?"],
+        "responses":["Coping with a diminished sense of interest and emotional numbness may involve focusing on self-care, including exercise, nutrition, and quality sleep.",
+        "Building a daily routine with achievable goals and small, enjoyable activities can help reintroduce a sense of engagement and purpose.",
+        "Practices like mindfulness, journaling, or creative hobbies can help you reconnect with your emotions and interests over time.",
+        "Seeking professional guidance can provide personalized coping strategies and tools tailored to your specific needs and circumstances.",
+        "Consider involving friends and family in your coping journey; their support can be a valuable source of motivation and encouragement."]
+    },
+
+    {
+        "tag":"dep20",
+        "patterns":["Is there hope for recovering a sense of interest and emotional vitality in the future?",
+        "What is the outlook for individuals who are currently struggling with a lack of enthusiasm and emotional detachment?",
+        "Are there success stories or cases of people who have overcome similar experiences and regained interest in life?",
+        "How can I stay motivated and committed to my journey to recover emotional engagement and interests?",
+        "What are the steps I can take to work towards healing and rediscovering a fulfilling life despite the current challenges of depression?"],
+        "responses":["Recovery from a loss of interest and emotional numbness is possible with the right treatment and support. Many individuals have successfully regained their zest for life.",
+        "The outlook for people experiencing these challenges varies, but it's essential to remain hopeful and proactive in seeking help and making positive changes.",
+        "Exploring success stories and connecting with individuals who have overcome similar experiences can provide inspiration and guidance.",
+        "Staying motivated on the path to recovery involves setting realistic goals, celebrating small victories, and being patient with yourself.",
+        "Healing and rediscovering a fulfilling life despite the challenges of depression is an ongoing process that requires self-compassion, resilience, and the belief that brighter days are ahead."]
+    }
+]
+}
